@@ -15,8 +15,32 @@
 
 <body>
 
-    <div class="container-fluid">
-        <div class="row full-height intro-slide">
+    <div class="container-fluid content">
+        <!-- Navbar and relevant Links -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="logo-navbar" href="#">
+                    <!-- <img src="Images/Logo.png" alt="Logo Personal"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="#slideIntroducere">Home</a>
+                        <a class="nav-link" href="#slideProfil">Cine sunt</a>
+                        <a class="nav-link" href="#slideEducatie">Unde am invatat</a>
+                        <a class="nav-link" href="#slideExperienta">Unde am lucrat</a>
+                        <a class="nav-link" href="#slideContact">Contacteaza-ma</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Introduction Slide -->
+        <div class="row full-height intro-slide" id="slideIntroducere">
             <div class="col">
                 <div class="">
                     <h1 class="introduction-text">Mircea Casapu</h1>
@@ -25,7 +49,9 @@
                 </div>
             </div>
         </div>
-        <div class="row full-height profile-slide">
+
+        <!-- Prolfile Slide -->
+        <div class="row full-height profile-slide" id="slideProfil">
             <div class="col">
                 <h1>Profil</h1>
                 <h3>Sunt un student la Universitatea Politehnica Timisoara, pasionat de tehnologiile web. Am experienta
@@ -33,12 +59,14 @@
                     ordonat si structurat, si sunt perfectionist. Imi petrect timpul concentrandu-ma pe mici detalii si
                     perfectionandu-le. Sunt un team player, imi place sa lucrez in echipa, deoarece experienta altora
                     este mereu utila</h3>
-                    <h3>Detalii</h3>
-                    <p>Varsta: 21 de ani</p>
-                    <p>Locatie: Timisoara</p>
+                <h3>Detalii</h3>
+                <p>Varsta: 21 de ani</p>
+                <p>Locatie: Timisoara</p>
             </div>
         </div>
-        <div class="row full-height education-slide">
+
+        <!-- Education Slide -->
+        <div class="row full-height education-slide" id="slideEducatie">
             <div class="col">
                 <h1>Educatie</h1>
                 <h3>Universitatea Politehnica Timisoara</h3>
@@ -48,7 +76,9 @@
                 <p>Diploma de Bacalaureat - Matematica Informatica</p>
             </div>
         </div>
-        <div class="row full-height experience-slide">
+
+        <!-- Experience Slide -->
+        <div class="row full-height experience-slide" id="slideExperienta">
             <div class="col">
                 <h1>Experienta</h1>
                 <h3>Smart Value Services</h3>
@@ -58,11 +88,18 @@
                 <p>Internship - Dezvoltator web</p>
             </div>
         </div>
-        <div class="row full-height contact-slide">
+
+        <!-- Contact Me Slide -->
+        <div class="row full-height contact-slide" id="slideContact">
             <div class="col">
                 <h1>Contacteaza-ma</h1>
             </div>
         </div>
+
+        <!-- Get in tuch Slide -->
+        <footer class="sticky-footer">
+            <h3>Gaseste-ma si pe: </h3>
+        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
