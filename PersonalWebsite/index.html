@@ -41,12 +41,9 @@
 
         <!-- Introduction Slide -->
         <div class="row full-height intro-slide" id="slideIntroducere">
-            <div class="col">
-                <div class="">
-                    <h1 class="introduction-text">Mircea Casapu</h1>
-                    <h3 class="introduction-text">Dezvoltator Web - Student - Pasionat de tehnologie</h3>
-                    <p class="introduction-text">CV Web</p>
-                </div>
+            <div class="col vertical-center">
+                <h1 class="introduction-text">Mircea Casapu</h1>
+                <h3 class="introduction-text">Web Dev - UI/UX - Student - Pasionat de tehnologie</h3>
             </div>
         </div>
 
@@ -54,7 +51,7 @@
         <div class="row full-height profile-slide" id="slideProfil">
             <div class="col">
                 <h1>Profil</h1>
-                <h3>Sunt un student la Universitatea Politehnica Timisoara, pasionat de tehnologiile web. Am experienta
+                <h3>Sunt student la Universitatea Politehnica Timisoara, pasionat de tehnologiile web. Am experienta
                     cu toate nivelele stack-ului, dar in principal, ma axes pe dezvoltare front-end. Imi place sa fiu
                     ordonat si structurat, si sunt perfectionist. Imi petrect timpul concentrandu-ma pe mici detalii si
                     perfectionandu-le. Sunt un team player, imi place sa lucrez in echipa, deoarece experienta altora
@@ -92,13 +89,39 @@
         <!-- Contact Me Slide -->
         <div class="row full-height contact-slide" id="slideContact">
             <div class="col">
+
                 <h1>Contacteaza-ma</h1>
+                <form method="POST" action="formControl.php">
+                    <div class="mb-3">
+                        <label for="inputNume" class="form-label">Nume</label>
+                        <input type="text" class="form-control" id="inputNume" name="inputNume">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Adresa de email</label>
+                        <input type="email" class="form-control" id="inputEmail" name="inputEmail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputTelefon" class="form-label">Telefon</label>
+                        <input type="text" class="form-control" id="inputTelefon" name="inputTelefon">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputMesaj" class="form-label">Mesaj</label>
+                        <input type="text" class="form-control" id="inputMesaj" name="inputMesaj">
+                    </div>
+                    <button type="submit" name="submit" class="btn btn-primary">Trimite</button>
+                </form>
+
+                <?=$thankYou ?>
+
             </div>
         </div>
 
-        <!-- Get in tuch Slide -->
+        <!-- Get in touch Slide -->
         <footer class="sticky-footer">
             <h3>Gaseste-ma si pe: </h3>
+            <a href="https://www.linkedin.com/in/mircea-casapu-54a794162" target="_blank">LinkedIn</a>
+            <a href="https://www.google.com" target="_blank">Google</a>
+            <a nref="https://github.com/PCRinus" target="_blank">GitHub</a>
         </footer>
     </div>
 

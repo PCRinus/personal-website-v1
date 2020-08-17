@@ -24,22 +24,19 @@ body {
     --independence: #344966ff;
     --light-steel-blue: #b4cdedff;
     --baby-powder: #f0f4efff;
-    --sage: #bfcc94ff;    
+    --sage: #bfcc94ff;
+    --black: #000000; 
 }
 
 /*Layout Properties*/
 .full-height{
-    height: 100vh;
+    min-height: 100vh;
 }
 /*1st slide*/
-/* .intro-slide{
-    background-image: url('Images/CodeBackground.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    -webkit-filter: blur(4px);
-    filter: blur(4px);
-} */
+.vertical-center{
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 .introduction-text{
     text-align: center;
@@ -63,4 +60,13 @@ body {
 /*5th slide*/
 .contact-slide{
     background-color: var(--independence);
+}
+
+/* footer */
+.sticky-footer{
+    background-color: var(--rich-black-fogra-29);
+}
+
+.sticky-footer > h3{
+    color:var(--baby-powder);
 }
