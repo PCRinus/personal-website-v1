@@ -15,7 +15,7 @@
 
 <body>
 
-    <div class="container-fluid content">
+    <div class="container-xl content">
         <!-- Navbar and relevant Links -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container-fluid">
@@ -48,22 +48,24 @@
         </div>
 
         <!-- Prolfile Slide -->
-        <div class="row full-height profile-slide" id="slideProfil">
-            <div class="col">
-                <h1>Profil</h1>
+        <div class="row profile-slide" id="slideProfil">
+            <div class="col-md-3">
+                <img class="profile-picture img-fluid" src="Images/ProfilePicture Cropped.jpg" alt="Profile Picture>">
+                <h6>Varsta: 21 de ani</h6>
+                <h6>Locatie: Timisoara</h6>
+            </div>
+            
+            <div class="col-md-9">
                 <h3>Sunt student la Universitatea Politehnica Timisoara, pasionat de tehnologiile web. Am experienta
                     cu toate nivelele stack-ului, dar in principal, ma axes pe dezvoltare front-end. Imi place sa fiu
                     ordonat si structurat, si sunt perfectionist. Imi petrect timpul concentrandu-ma pe mici detalii si
                     perfectionandu-le. Sunt un team player, imi place sa lucrez in echipa, deoarece experienta altora
                     este mereu utila</h3>
-                <h3>Detalii</h3>
-                <p>Varsta: 21 de ani</p>
-                <p>Locatie: Timisoara</p>
             </div>
         </div>
 
         <!-- Education Slide -->
-        <div class="row full-height education-slide" id="slideEducatie">
+        <div class="row education-slide" id="slideEducatie">
             <div class="col">
                 <h1>Educatie</h1>
                 <h3>Universitatea Politehnica Timisoara</h3>
@@ -75,7 +77,7 @@
         </div>
 
         <!-- Experience Slide -->
-        <div class="row full-height experience-slide" id="slideExperienta">
+        <div class="row experience-slide" id="slideExperienta">
             <div class="col">
                 <h1>Experienta</h1>
                 <h3>Smart Value Services</h3>
@@ -87,7 +89,7 @@
         </div>
 
         <!-- Contact Me Slide -->
-        <div class="row full-height contact-slide" id="slideContact">
+        <div class="row contact-slide" id="slideContact">
             <div class="col">
 
                 <h1>Contacteaza-ma</h1>
@@ -110,9 +112,6 @@
                     </div>
                     <button type="submit" name="submit" class="btn btn-primary">Trimite</button>
                 </form>
-
-                <?=$thankYou ?>
-
             </div>
         </div>
 

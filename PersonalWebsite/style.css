@@ -43,10 +43,20 @@ body {
     color:var(--rich-black-fogra-29);
 }
 
+.intro-slide{
+    background-image: url("Images/CodeBackground.jpg");
+
+}
+
 /*2nd slide*/
 .profile-slide{
     background-color: var(--baby-powder);
+}
 
+.profile-picture{
+    display: block;
+    border-radius: 50%;
+    
 }
 /*3rd slide*/
 .education-slide{
@@ -69,4 +79,9 @@ body {
 
 .sticky-footer > h3{
     color:var(--baby-powder);
+}
+
+.col-md-3 > h6{
+    margin-top: auto;
+    margin-bottom: auto;
 }

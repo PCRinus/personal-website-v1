@@ -23,7 +23,7 @@ echo "Succes";
 
 ? -->
 
-<?php
+<!-- ?php
 
 if($_POST["submit"]) {
     $recipient="mircea.casapu@gmail.com";
@@ -37,4 +37,8 @@ if($_POST["submit"]) {
     mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
+} -->
+
+<?php
+    echo "Hello World!";
+?>
