@@ -6,39 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome!</title>
 
+    <!-- Vue Inclusion for idk what, let's experiment -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/dc2b99e1d2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-    <div class="container-xl content">
-        <!-- Navbar and relevant Links -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" id="logo-navbar" href="#">
-                    <!-- <img src="Images/Logo.png" alt="Logo Personal"> -->
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="#slideIntroducere">Home</a>
-                        <a class="nav-link" href="#slideProfil">Cine sunt</a>
-                        <a class="nav-link" href="#slideEducatie">Unde am invatat</a>
-                        <a class="nav-link" href="#slideExperienta">Unde am lucrat</a>
-                        <a class="nav-link" href="#slideContact">Contacteaza-ma</a>
-                    </div>
+    <!-- Navbar and relevant Links -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="logo-navbar" href="#">
+                <!-- <img src="Images/Logo.png" alt="Logo Personal"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="#slideIntroducere">Home</a>
+                    <a class="nav-link" href="#slideProfil">Cine sunt</a>
+                    <a class="nav-link" href="#slideEducatie">Unde am invatat</a>
+                    <a class="nav-link" href="#slideExperienta">Unde am lucrat</a>
+                    <a class="nav-link" href="#slideContact">Contacteaza-ma</a>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-
+    <div class="container-fluid content">
         <!-- Introduction Slide -->
         <div class="row full-height intro-slide" id="slideIntroducere">
             <div class="col vertical-center">
@@ -46,7 +49,9 @@
                 <h3 class="introduction-text">Web Dev - UI/UX - Student - Pasionat de tehnologie</h3>
             </div>
         </div>
+    </div>
 
+    <div class="container-sm">
         <!-- Prolfile Slide -->
         <div class="row profile-slide" id="slideProfil">
             <div class="col-sm-3">
@@ -54,7 +59,7 @@
                 <p>Varsta: 21 de ani</p>
                 <p>Locatie: Timisoara</p>
             </div>
-            
+
             <div class="col-sm-9">
                 <h3>Sunt student la Universitatea Politehnica Timisoara, pasionat de tehnologiile web. Am experienta
                     cu toate nivelele stack-ului, dar in principal, ma axes pe dezvoltare front-end. Imi place sa fiu
@@ -63,7 +68,9 @@
                     este mereu utila</h3>
             </div>
         </div>
+    </div>
 
+    <div class="container-sm">
         <!-- Education Slide -->
         <div class="row justify-content-md-center education-slide" id="slideEducatie">
             <div class="col-sm-6">
@@ -83,9 +90,10 @@
                 <p>Internship - Dezvoltator web</p>
             </div>
         </div>
+    </div>
 
-        <!-- Contact Me Slide -->
-        <div class="row contact-slide" id="slideContact">
+    <!-- Contact Me Slide -->
+    <!-- <div class="row contact-slide" id="slideContact">
             <div class="col">
 
                 <h1>Contacteaza-ma</h1>
@@ -109,14 +117,17 @@
                     <button type="submit" name="submit" class="btn btn-primary">Trimite</button>
                 </form>
             </div>
-        </div>
+        </div> -->
 
+    <div class="container-sm">
         <!-- Get in touch Slide -->
         <div class="row justify-content-center">
             <footer class="sticky-footer">
-                <h3>Gaseste-ma si pe: </h3>
-                <a href="https://www.linkedin.com/in/mircea-casapu-54a794162" target="_blank">LinkedIn</a>
-                <a href="https://github.com/PCRinus" target="_blank">GitHub</a>
+                <h3>Contact: </h3>
+                <a href="https://www.linkedin.com/in/mircea-casapu-54a794162" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/PCRinus" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
             </footer>
         </div>
     </div>
