@@ -1,15 +1,12 @@
 html {
     scroll-behavior: smooth;
     min-height: 100%;
+    overflow-x: hidden;
   }
 
 body {
       display: flex;
       flex-direction: column;
-      /* background: rgb(255,255,255);
-      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(176,204,255,1) 25%, rgba(130,176,255,1) 50%, rgba(54,129,255,1) 75%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%); 
-      background-repeat: no-repeat;
-      background-attachment: scroll; */
   }
 
   .content{
@@ -24,14 +21,16 @@ body {
     --light-steel-blue: #b4cdedff;
     --baby-powder: #f0f4efff;
     --sage: #bfcc94ff;
-    --black: #000000; 
+    --black: #000000;
+    --rythm: #767B91;
+    --cyanblue: #759EB8;
 }
 
 /*Layout Properties*/
 .full-height{
     min-height: 100vh;
 }
-/*1st slide*/
+
 .vertical-center{
     margin-top: auto;
     margin-bottom: auto;
@@ -48,10 +47,23 @@ body {
     filter: grayscale(70%);
 }
 
+.background-profile{
+    width: 100vw;
+    background-color: var(--baby-powder);
+}
+
+h1{
+    color: var(--cyanblue);
+}
+
 .profile-picture{
     display: block;
     border-radius: 50%;
     
+}
+
+.profile-slide{
+    margin: 3rem 0rem 3rem 0rem;
 }
 
 .col-sm-6 > h1, .col-sm-6 > h3, .col-sm-6 > p{
@@ -63,6 +75,22 @@ body {
     margin-bottom: auto;
 }
 
-h1,h3,p{
+h1,h3{
+    text-align: center;
+}
+
+.footer{
+    background-color: var(--rythm);
+}
+
+h1>a {
+    color: white;
+}
+
+h1>a:hover{
+    color: black;
+}
+
+#experience-quote{
     text-align: center;
 }
