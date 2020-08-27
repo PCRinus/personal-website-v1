@@ -18,17 +18,15 @@
     <script src="https://kit.fontawesome.com/dc2b99e1d2.js" crossorigin="anonymous"></script>
 
     <!-- Typed.JS -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> -->
+    <script src="Scripts/index.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid intro-slide">
-        <!-- Navbar and relevant Links -->
-        <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <!-- <div class="container-fluid intro-slide"> -->
+    <!-- Navbar and relevant Links -->
+    <!-- <nav class="navbar navbar-expand-md navbar-dark sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" id="logo-navbar" href="#">
-                    <!-- <img src="Images/Logo.png" alt="Logo Personal"> -->
-                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -42,14 +40,32 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav> -->
 
-        <!-- <div class="container-fluid intro-slide"> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="#slideIntroducere">Home</a>
+                    <a class="nav-link" href="#slideProfil">Cine sunt</a>
+                    <a class="nav-link" href="#slideExperienta">Experienta</a>
+                    <a class="nav-link" href="#slideContact">Contacteaza-ma</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid intro-slide">
         <!-- Introduction Slide -->
         <div class="row full-height" id="slideIntroducere">
             <div class="col vertical-center">
-                <h1 class="introduction-text" id="Title">Mircea Casapu</h1>
-                <h3 class="introduction-text">Web Dev - UI/UX - Student - Pasionat de tehnologie</h3>
+                <h1 class="introduction-text">Mircea Casapu</h1>
+                <span> </span>
+                <h1 class="introduction-text typed"></h1>
             </div>
         </div>
     </div>
@@ -125,7 +141,8 @@
 
                 <div class="col-md-9">
                     <p>
-                        <strong>Facultatea de Automatica si Calculatoare - Ingineria Sistemelor</strong> <br>
+                        <strong>Facultatea de Automatica si Calculatoare - Ingineria Sistemelor - Diploma de
+                            Licenta</strong> <br>
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -242,18 +259,19 @@
 
     <!-- Get in touch Slide -->
     <div class="background-contact">
-        <div class="container-md">
+        <div class="container-md" id="slideContact">
             <div class="row">
                 <div class="col-md-12">
                     <h1>Contact</h1>
                 </div>
                 <div class="col-md-6">
-                    <h1>
+                    <p>
                         <a href="https://www.linkedin.com/in/mircea-casapu-54a794162" target="_blank"><i
                                 class="fab fa-linkedin-in"></i> Gasete-ma pe LinkedIn</a>
-                    </h1>
+                    </p>
                     <h1>
-                        <a href="https://github.com/PCRinus" target="_blank"><i class="fab fa-github-square"></i> Look at my work on GitHub</a>
+                        <a href="https://github.com/PCRinus" target="_blank"><i class="fab fa-github-square"></i> Look
+                            at my work on GitHub</a>
                     </h1>
                 </div>
 
@@ -276,6 +294,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
         crossorigin="anonymous"></script>
+
+    <script src="Scripts/typed.js"></script>
+
+    <script>
+        var typed = new Typed('.typed', {
+            strings: ['Sunt un Web Developer ^1000', 'Sunt un UI/UX Enthusiast ^1000', 'Sunt un Pasionat de Tehnologie ^1000'],
+            smartBackspace: true, // Default value
+            typeSpeed: 60,
+            backSpeed: 60
+        });
+    </script>
 </body>
 
 </html>
