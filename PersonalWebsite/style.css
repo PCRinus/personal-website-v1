@@ -48,11 +48,10 @@ body {
 }
 
 .background-profile{
-    width: 100vw;
     background-color: var(--baby-powder);
 }
 
-h1{
+h1, h2{
     color: var(--cyanblue);
 }
 
@@ -79,7 +78,7 @@ h1,h3{
     text-align: center;
 }
 
-.footer{
+.background-contact{
     background-color: var(--rythm);
 }
 
