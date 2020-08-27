@@ -44,6 +44,7 @@ body {
 .intro-slide{
     background-image: url(Images/CodeBackgroundBlurred.jpg);
     background-size: cover;
+    background-position: center;
     filter: grayscale(70%);
 }
 
