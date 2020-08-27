@@ -65,7 +65,7 @@
             <div class="col vertical-center">
                 <h1 class="introduction-text">Mircea Casapu</h1>
                 <span> </span>
-                <h1 class="introduction-text typed"></h1>
+                <h1 class="introduction-text">Sunt un <span class="typed" style="color: var(--cyanblue)"></span></h1>
             </div>
         </div>
     </div>
@@ -80,7 +80,7 @@
                 </div> -->
 
                 <div class="col-md-4 vertical-center">
-                    <h3>Despre mine</h3>
+                    <h2>Despre mine</h2>
                     <p>Sunt student la <strong>Universitatea Politehnica Timișoara</strong>, pasionat de tehnologiile
                         web. Îmi place să fiu creativ și să experimentez cu diverse tehnologii. Am experiență
                         cu toate nivelele stack-ului, dar în principal, mă axez pe dezvoltare front-end. Îmi place să
@@ -97,7 +97,7 @@
                 </div>
 
                 <div class="col-md-4 vertical-center">
-                    <h3>Detalii</h3>
+                    <h2>Detalii</h2>
                     <p>
                         <strong>Nume complet: </strong>Casapu Mircea-Adrian
                     </p>
@@ -118,8 +118,8 @@
             <div class="row justify-content-md-center education-slide" id="slideExperienta">
                 <div class="col-md-12">
                     <h1>Experienta</h1>
-                    <p id="experience-quote">
-                        “People never learn anything by being told, they have to find out for themselves.”
+                    <p class="experience-quote">
+                        “People never learn anything by being told, they have to find out for themselves.”<br> - 
                     </p>
                 </div>
             </div>
@@ -185,7 +185,7 @@
                     <h6>Sept 2020 - Prezent</h6>
                     <h6><i class="fas fa-map-marker-alt"></i> Timisoara/Remote</h6>
                     <h6><i class="fas fa-link"></i> <a href="https://www.smartvalue.io/"
-                            target="_blank">https://www.smartvalue.io</a></h6>
+                            target="_blank">https://www.smartvalue.io/</a></h6>
                 </div>
 
                 <div class="col-md-9">
@@ -209,7 +209,7 @@
                     </h6>
                     <h6>
                         <i class="fas fa-link"></i> <a
-                            href="https://www.nokia.com/ro_ro/">https://www.nokia.com/ro_ro</a>
+                            href="https://www.nokia.com/ro_ro/">https://www.nokia.com/ro_ro/</a>
                     </h6>
                 </div>
 
@@ -299,10 +299,11 @@
 
     <script>
         var typed = new Typed('.typed', {
-            strings: ['Sunt un Web Developer ^1000', 'Sunt un UI/UX Enthusiast ^1000', 'Sunt un Pasionat de Tehnologie ^1000'],
-            smartBackspace: true, // Default value
+            strings: ['Web Developer ^800', 'UI/UX Enthusiast ^800', 'Pasionat de Tehnologie ^800'],
+            smartBackspace: true,
             typeSpeed: 60,
-            backSpeed: 60
+            backSpeed: 60,
+            loop:true
         });
     </script>
 </body>
