@@ -95,6 +95,12 @@ h1>a:hover{
     text-align: center;
 }
 
+.show-more-button{
+    background-color: var(--cyanblue);
+    color: white;
+    display: block;
+}
+
 .visible-text{
     display: inline;
 }
