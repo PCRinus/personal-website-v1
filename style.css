@@ -104,8 +104,12 @@ h1>a:hover{
     margin: 0.5rem 0rem 1rem 0rem;
 }
 
+.show-more-text{
+    padding-bottom: 1rem;
+}
+
 .visible-text{
-    display: inline;
+    display: block;
 }
 
 .invisible-text{
