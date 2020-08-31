@@ -16,10 +16,6 @@
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/dc2b99e1d2.js" crossorigin="anonymous"></script>
-
-    <!-- Typed.JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> -->
-    <script src="Scripts/index.js"></script>
 </head>
 
 <body>
@@ -63,7 +59,7 @@
         <!-- Introduction Slide -->
         <div class="row full-height" id="slideIntroducere">
             <div class="col vertical-center">
-                <h1 class="introduction-text">Mircea Caasapu</h1>
+                <h1 class="introduction-text">Mircea Casapu</h1>
                 <span> </span>
                 <h1 class="introduction-text">Sunt un <span class="typed" style="color: var(--cyanblue)"></span></h1>
             </div>
@@ -119,7 +115,7 @@
                 <div class="col-md-12">
                     <h1>Experienta</h1>
                     <p class="experience-quote">
-                        “People never learn anything by being told, they have to find out for themselves.”<br> - 
+                        “People never learn anything by being told, they have to find out for themselves.”<br> -
                     </p>
                 </div>
             </div>
@@ -142,7 +138,10 @@
                 <div class="col-md-9">
                     <p>
                         <strong>Facultatea de Automatica si Calculatoare - Ingineria Sistemelor - Diploma de
-                            Licenta</strong> <br>
+                            Licenta</strong></p>
+
+                    <button id="show-more-button">Mai mult</button>
+                    <p class="show-more-text" style="display: none;">
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -303,9 +302,11 @@
             smartBackspace: true,
             typeSpeed: 60,
             backSpeed: 60,
-            loop:true
+            loop: true
         });
     </script>
+
+    <script src="Scripts/index.js"></script>
 </body>
 
 </html>
