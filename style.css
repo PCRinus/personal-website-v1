@@ -75,8 +75,10 @@ h1, h2{
     margin-bottom: auto;
 }
 
-h1,h3{
+h1{
     text-align: center;
+    margin-top:1rem;
+    margin-bottom: 1rem;
 }
 
 .background-contact{
@@ -99,6 +101,7 @@ h1>a:hover{
     background-color: var(--cyanblue);
     color: white;
     display: block;
+    margin: 0.5rem 0rem 1rem 0rem;
 }
 
 .visible-text{
