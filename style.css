@@ -115,3 +115,24 @@ h1>a:hover{
 .invisible-text{
     display: none;
 }
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-icons{
+    font-size: 2rem;
+    color: white;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .contact-icons{
+        margin-right: auto;
+    }
+}
+
+h3{
+    color: var(--independence);
+}
