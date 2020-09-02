@@ -2,6 +2,8 @@ html {
     scroll-behavior: smooth;
     min-height: 100%;
     overflow-x: hidden;
+    /* font-size: 22px; Requires further testing fore larger screen sizes*/ 
+    font-size: 18px;
   }
 
 body {
@@ -42,10 +44,10 @@ body {
 }
 
 .intro-slide{
-    background-image: url(Images/CodeBackgroundBlurred.jpg);
+    background-image: url(Images/CodeBackgroundBlurredGreyscaled.jpg);
     background-size: cover;
     background-position: center;
-    filter: grayscale(70%);
+    /* filter: grayscale(70%); */
 }
 
 .background-profile{
@@ -93,7 +95,7 @@ h1>a:hover{
     color: black;
 }
 
-.experience-quote{
+.quotes{
     text-align: center;
 }
 

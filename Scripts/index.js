@@ -8,7 +8,6 @@ for (let i = 0; i < moreButtons.length; i++) {
       moreText[i].classList.remove("invisible-text");
       moreText[i].classList.add("visible-text");
     } else {
-      console.log("Test");
       moreButtons[i].innerHTML = "Mai mult";
       moreText[i].classList.remove("visible-text");
       moreText[i].classList.add("invisible-text");
