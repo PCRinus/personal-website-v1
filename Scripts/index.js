@@ -14,3 +14,18 @@ for (let i = 0; i < moreButtons.length; i++) {
     }
   });
 }
+
+var myNav = document.getElementById("myNav");
+var viewportHeight = document.documentElement.clientHeight;
+var navbarHeight = myNav.offsetHeight;
+var calculatedHeight = viewportHeight - navbarHeight;
+
+window.onscroll = function () {
+  if (window.pageYOffset > calculatedHeight) {
+    myNav.classList.add("nav-colored");
+    myNav.classList.remove("nav-transparent");
+  } else {
+    myNav.classList.add("nav-transparent");
+    myNav.classList.remove("nav-colored");
+  }
+};

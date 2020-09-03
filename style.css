@@ -47,7 +47,8 @@ body {
     background-image: url(Images/CodeBackgroundBlurredGreyscaled.jpg);
     background-size: cover;
     background-position: center;
-    /* filter: grayscale(70%); */
+    /* height: 100vh; */
+    /* max-height: 100vh; */
 }
 
 .background-profile{
@@ -138,3 +139,11 @@ h1>a:hover{
 h3{
     color: var(--independence);
 }
+
+.nav-colored{
+    background-color:var(--independence);
+}
+
+/* .nav-transparent{
+    background-color: transparent;
+} */
