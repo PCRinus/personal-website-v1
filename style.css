@@ -85,7 +85,7 @@ h1{
 }
 
 .background-contact{
-    background-color: var(--rythm);
+    background-color: #434343;
 }
 
 h1>a {
@@ -120,20 +120,24 @@ h1>a:hover{
 }
 
 .footer{
+    margin-top: 1rem;
     display: flex;
-    justify-content: space-evenly;
 }
 
 .contact-icons{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
-    margin-right: auto;
+    text-decoration: none;
 }
 
 @media (min-width: 768px) {
     .contact-icons{
-        margin-right: auto;
+        font-size: 2rem;
     }
+}
+
+.contact-icons:hover{
+    color: var(--cyanblue);
 }
 
 h3{
@@ -144,6 +148,17 @@ h3{
     background-color:var(--independence);
 }
 
-/* .nav-transparent{
-    background-color: transparent;
-} */
+#footer-thanks{
+    color: #ababab;
+    text-align: center;
+    margin: 1.5rem 0rem;
+}
+
+#footer-thanks > a{
+    color: #cdcdcd;
+    text-decoration: none;
+}
+#footer-thanks > a:hover{
+    color: var(--cyanblue);
+    text-decoration: none;
+}
