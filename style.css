@@ -121,9 +121,8 @@ h1>a:hover{
 
 .footer{
     margin-top: 1rem;
-    display: flex;
+    /* display: flex; */
 }
-
 .contact-icons{
     font-size: 1.5rem;
     color: white;
@@ -133,6 +132,10 @@ h1>a:hover{
 @media (min-width: 768px) {
     .contact-icons{
         font-size: 2rem;
+    }
+
+    .footer{
+        display: flex;
     }
 }
 
@@ -151,7 +154,7 @@ h3{
 #footer-thanks{
     color: #ababab;
     text-align: center;
-    margin: 1.5rem 0rem;
+    /* margin: 1rem 0rem; */
 }
 
 #footer-thanks > a{
