@@ -4,10 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome!</title>
-
-    <!-- Vue Inclusion for idk what, let's experiment -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <title>Mircea Casapu - CV Online</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
@@ -19,44 +16,24 @@
 </head>
 
 <body>
-    <!-- <div class="container-fluid intro-slide"> -->
-    <!-- Navbar and relevant Links -->
-    <!-- <nav class="navbar navbar-expand-md navbar-dark sticky-top">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="#slideIntroducere">Home</a>
-                        <a class="nav-link" href="#slideProfil">Cine sunt</a>
-                        <a class="nav-link" href="#slideExperienta">Experienta</a>
-                        <a class="nav-link" href="#slideContact">Contacteaza-ma</a>
-                    </div>
-                </div>
-            </div>
-        </nav> -->
 
-    <!-- <nav class="navbar bg-dark navbar-expand-md navbar-dark fixed-top" id="myNav">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="#slideIntroducere">Home</a>
-                    <a class="nav-link" href="#slideProfil">Cine sunt</a>
-                    <a class="nav-link" href="#slideExperienta">Experienta</a>
-                    <a class="nav-link" href="#slideContact">Contacteaza-ma</a>
-                </div>
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#slideExperienta">Experienta</a>
             </div>
+          </div>
         </div>
-    </nav> -->
+      </nav> -->
 
-    <section class="container-fluid intro-slide">
+    <section class="container-fluid intro-slide" id="heroImage">
         <!-- Introduction Slide -->
         <div class="row full-height" id="slideIntroducere">
             <div class="col vertical-center">
@@ -105,6 +82,8 @@
             </div>
         </div>
     </section>
+
+    <div class="parallax-window"></div>
 
     <!-- Experience Slide -->
     <section class="background-experience">
@@ -234,7 +213,7 @@
     </section>
 
     <!--Abislities Slide-->
-    <section class="background-abilities">
+    <section class="background-abilities" id="slideExperienta">
         <div class="container-md">
             <div class="row">
                 <div class="col">
@@ -290,9 +269,6 @@
                     <a class="contact-icons" href="https://www.facebook.com/mrc1998/" target="_blank"><i
                             class="fab fa-facebook"></i> Facebook</a>
                 </div>
-                <!-- <h1>
-                        <a href="Files/CvCasapuMircea.pdf" download> Descarca-mi CV-ul </a>
-                    </h1> -->
             </div>
 
             <hr>
@@ -314,6 +290,9 @@
         crossorigin="anonymous"></script>
 
     <script src="Scripts/typed.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script>
         var typed = new Typed('.typed', {
