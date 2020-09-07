@@ -47,8 +47,6 @@ body {
     background-image: url(Images/CodeBackgroundBlurredGreyscaled.jpg);
     background-size: cover;
     background-position: center;
-    /* height: 100vh; */
-    /* max-height: 100vh; */
 }
 
 .background-profile{
@@ -164,4 +162,12 @@ h3{
 #footer-thanks > a:hover{
     color: var(--cyanblue);
     text-decoration: none;
+}
+
+.button-cv{
+    background-color: var(--cyanblue);
+    margin: 0rem 0rem 1rem 0rem;
+    text-decoration: none;
+    color: white;
+    display: block;
 }
