@@ -22,7 +22,7 @@ html {
 body {
       display: flex;
       flex-direction: column;
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
   }
 
 /*Layout Properties*/
@@ -212,8 +212,8 @@ h3{
     transition: background-color 0.1s ease-in-out;
 }
 
-.nav-mobile-link:focus{
-    color: var(--rythm);
+.nav-mobile-active{
+    color: var(--independence);
 }
 
 .nav-mobile-icons{
