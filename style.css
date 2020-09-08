@@ -206,10 +206,18 @@ h3{
     overflow: hidden;
     white-space: nowrap;
     font-size: 1rem;
-    color: #ababab;
+    color: #9a9a9a;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     /* transition: background-color 0.1s ease-in-out; */
+}
+
+.nav-mobile-link:hover{
+    color: white;
+}
+
+.nav-mobile-link:focus{
+    color: white;
 }
 
 .nav-mobile-active{
