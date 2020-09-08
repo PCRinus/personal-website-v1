@@ -7,50 +7,58 @@
     <title>Mircea Casapu - CV Online</title>
 
     <!-- Bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-<!-- FontAwesome -->
-<script src="https://kit.fontawesome.com/dc2b99e1d2.js" crossorigin="anonymous"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/dc2b99e1d2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#slideExperienta">Experienta</a>
-            </div>
-          </div>
-        </div>
-      </nav> -->
+    <nav class="nav-mobile d-md-none">
+          <a href="#slideProfil" class="nav-mobile-link">
+            <i class="fas fa-user-circle nav-icons nav-mobile-icons"></i>
+            <span class="nav__text">Profil</span>
+          </a>
+          <a href="#slideExperienta" class="nav-mobile-link">
+            <i class="fas fa-list-ul nav-icons nav-mobile-icons"></i>
+            <span class="nav__text">Experienta</span>
+          </a>
+          <a href="#slideAbilitati" class="nav-mobile-link">
+            <i class="fas fa-grip-horizontal nav-mobile-icons"></i>
+            <span class="nav__text">Abilitati</span>
+          </a>
+    </nav>
 
-    <section class="container-fluid intro-slide" id="heroImage">
-        <!-- Introduction Slide -->
-        <div class="row full-height" id="slideIntroducere">
-            <div class="col vertical-center">
-                <h1 class="introduction-text">Mircea Casapu</h1>
-                <span> </span>
-                <h1 class="introduction-text">Sunt un <span class="typed" style="color: var(--cyanblue)"></span>
-                </h1>
+    <!-- Introduction Slide -->
+    <section class="background-intro">
+        <div class="container-md">
+            <div class="row full-height" id="slideIntroducere">
+                <div class="col align-self-center">
+                    <h1 class="introduction-text">Mircea Casapu</h1>
+                    <h1 class="introduction-text">
+                        Sunt un <span class="typed" style="color: var(--cyanblue)"></span>
+                    </h1>
+                </div>
+
+                <!-- <div class="w-100" style="height: 0vh;"></div>
+
+                <div class="col align-self-center">
+                    <a href="#slideProfil" class="btn button-general button-cta">Profil</a>
+                    <a href="#slideExperienta" class="btn button-general button-cta">Experienta</a>
+                    <a href="#slideAbilitati" class="btn button-general button-cta">Abilitati</a>
+                </div> -->
             </div>
         </div>
     </section>
 
     <!-- Prolfile Slide -->
     <section class="background-profile">
-        <!--Vezi ca breakpointul media e pe lg, mai experimenteaza-->
         <div class="container-md">
             <div class="row justify-content-center profile-slide" id="slideProfil">
-                <div class="col-md-4 vertical-center">
+                <div class="col-md-4">
                     <h2>Despre mine</h2>
                     <p>Sunt student la <strong>Universitatea Politehnica Timișoara</strong>, pasionat de tehnologiile
                         web. Îmi place să fiu creativ și să experimentez cu diverse tehnologii. Am experiență
@@ -67,7 +75,7 @@
                         alt="Profile Picture>">
                 </div>
 
-                <div class="col-md-4 align-items-start">
+                <div class="col-md-4 align-self-center">
                     <h2>Detalii</h2>
                     <p>
                         <strong>Nume complet: </strong>Casapu Mircea-Adrian
@@ -90,7 +98,7 @@
         <div class="container-md">
             <div class="row justify-content-center education-slide" id="slideExperienta">
                 <div class="col-md-12">
-                    <h1>Experienta</h1>
+                    <h1 class="section-header">Experienta</h1>
                     <p class="quotes">
                         “People never learn anything by being told, they have to find out for themselves.”<br> - Paulo
                         Coelho
@@ -117,7 +125,7 @@
                             Sistemelor</strong>
                     </p>
                     <p><i class="fas fa-map-marker-alt"></i> Timisoara, 2017-Prezent</p>
-                    <button class="btn show-more-button">Mai mult</button>
+                    <button class="btn button-general show-more-button ">Mai mult</button>
                     <p class="show-more-text invisible-text">
                         În cadrul UPT am studiat diverse materii de OOP (Java, C#, C++) și robotica de bază prin
                         programarea pe plăcuțe Arduino. De asemenea, am
@@ -137,7 +145,7 @@
                         <strong>Diplomă de Bacalaureat - Matematică-Informatică</strong>
                     </p>
                     <p><i class="fas fa-map-marker-alt"></i> Timisoara, 2013-2017</p>
-                    <button class="btn show-more-button">Mai mult</button>
+                    <button class="btn button-general show-more-button ">Mai mult</button>
                     <p class="show-more-text invisible-text">
                         În timpul liceului am avut primele contacte cu programarea, specific C/C++ și puțină dezvoltare
                         web(vanilla HTML/CSS). Aceasta a fopst perioada care mi-a creat bazele programării, și care mi-a
@@ -167,7 +175,7 @@
                     <p><i class="fas fa-link"></i> <a href="https://www.smartvalue.io/"
                             target="_blank">https://www.smartvalue.io/</a>
                     </p>
-                    <button class="btn show-more-button">Mai mult</button>
+                    <button class="btn button-general show-more-button ">Mai mult</button>
                     <p class="show-more-text invisible-text">
                         TBD
                     </p>
@@ -190,7 +198,7 @@
                         <i class="fas fa-link"></i> <a
                             href="https://www.nokia.com/ro_ro/">https://www.nokia.com/ro_ro/</a>
                     </p>
-                    <button class="btn show-more-button">Mai mult</button>
+                    <button class="btn button-general show-more-button ">Mai mult</button>
                     <p class="show-more-text invisible-text">
                         Sarcinea mea a fost de a dezvolta și de a
                         menține un tool web intern Nokia, folosit pentru a genera și organiza diverse seturi de metrici
@@ -206,11 +214,11 @@
     </section>
 
     <!--Abislities Slide-->
-    <section class="background-abilities" id="slideExperienta">
+    <section class="background-abilities" id="slideAbilitati">
         <div class="container-md">
             <div class="row">
                 <div class="col">
-                    <h1>Abilitati</h1>
+                    <h1 class="section-header">Abilitati</h1>
                     <p class="quotes">"Ability is what you're capable of doing. Motivation determines what you do.
                         Attitude determines how well you do it."<br> - Lou Holtz</p>
                 </div>
@@ -239,7 +247,8 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-3">
-                    <a href="Files/CvCasapuMircea.pdf" download class="btn btn-lg button-cv"> Descarca-mi
+                    <a href="Files/CvCasapuMircea.pdf" download class="btn btn-lg button-general button-cv ">
+                        Descarca-mi
                         CV-ul </a>
                 </div>
             </div>
@@ -289,7 +298,7 @@
 
     <script>
         var typed = new Typed('.typed', {
-            strings: ['Web Developer ^800', 'UI/UX Enthusiast ^800', 'Pasionat de Tehnologie ^800'],
+            strings: ['Web Developer^800', 'UI/UX Enthusiast^800', 'Pasionat de Tehnologie^800'],
             smartBackspace: true,
             typeSpeed: 60,
             backSpeed: 60,
