@@ -1,6 +1,5 @@
-/*Primary Colors*/
-/* CSS HEX */
-:root{
+/*---------------------------Primary Colors and General Proprieties------------------*/
+:root {
     --rich-black-fogra-29: #0d1821ff;
     --independence: #344966ff;
     --light-steel-blue: #b4cdedff;
@@ -9,6 +8,16 @@
     --black: #000000;
     --rythm: #767B91;
     --cyanblue: #759EB8;
+    --viloetinchis: #2D3142;
+    --viloetdeschis: #4F5D75;
+    --gri-deschis: #BFC0C0;
+    --somon: #EF8354;
+
+    --chinese-red: #a53f2bff;
+    --persian-green: #25a18eff;
+    --alice-blue: #e7ecefff;
+    --raisin-black: #272932ff;
+    --tumbleweed: #d8a47fff;
 }
 
 
@@ -17,187 +26,44 @@ html {
     min-height: 100%;
     overflow-x: hidden;
     font-size: 18px;
-  }
+}
 
 body {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 3rem;
-  }
-
-/*Layout Properties*/
-.full-height{
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
 }
 
-.vertical-center{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.introduction-text{
-    color:#eaeaea;
-}
-
-.background-intro{
-    background-image: url(DownloadedTestImages/image-from-rawpixel-id-2524831-jpeg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-}
-
-.background-profile{
-    /* background-color: var(--baby-powder); */
-    background-color: #eaeaea;
-}
-
-.background-experience{
-    background-color: #eaeaea;
-}
-
-h1, h2{
-    color: var(--cyanblue);
-}
-
-.profile-picture{
-    display: block;
-    border-radius: 50%;
-    
-}
-
-.profile-slide{
-    margin: 3rem 0rem 3rem 0rem;
-}
-
-.col-sm-6 > h1, .col-sm-6 > h3, .col-sm-6 > p{
-    text-align: center;
-}
-
-.col-md-3 > h6{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-h1{
-    margin-top:1rem;
+h1 {
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-
-
-.background-contact{
-    background-color: #323232;
-}
-
-.background-abilities{
-    background-color: #eaeaea;
-}
-
-h1>a {
-    color: white;
-}
-
-h1>a:hover{
-    color: black;
-}
-
-.quotes{
-    text-align: center;
-}
-
-.button-general{
-    background-color: var(--cyanblue);
-    color: white;
-    text-decoration: none;
-}
-
-.show-more-button{
-    display: block;
-    margin: 0.5rem 0rem 1rem 0rem;
-}
-
-.button-cv{
-    margin: 0rem 0rem 1rem 0rem;
-    display: block;
-}
-
-.button-cta{
-    font-size: 1.75rem;
-    font-weight: 500;
-    margin-top: 1rem;
-}
-
-.show-more-text{
-    padding-bottom: 1rem;
-}
-
-.visible-text{
-    display: block;
-}
-
-.invisible-text{
-    display: none;
-}
-
-.footer{
-    margin-top: 1rem;
-    /* display: flex; */
-}
-.contact-icons{
-    font-size: 1.5rem;
-    color: white;
-    text-decoration: none;
-}
-
-@media (min-width: 768px) {
-    body{
-        margin-bottom: 0rem;
-    }
-
-    .contact-icons{
-        font-size: 2rem;
-    }
-
-    .footer{
-        display: flex;
-    }
-
-    .background-intro{
-        background-attachment: fixed;
-    }
-}
-
-.contact-icons:hover{
+h1,
+h2 {
     color: var(--cyanblue);
 }
 
-h3{
+h3 {
     color: var(--independence);
 }
 
-.nav-colored{
-    background-color:var(--independence);
-}
-
-#footer-thanks{
-    color: #ababab;
-    text-align: center;
-    /* margin: 1rem 0rem; */
-}
-
-#footer-thanks > a{
-    color: #cdcdcd;
-    text-decoration: none;
-}
-#footer-thanks > a:hover{
-    color: var(--cyanblue);
-    text-decoration: none;
-}
-
-.section-header{
+.quotes {
     text-align: center;
 }
 
+.button-general {
+    background-color: var(--somon);
+    color: white;
+    text-decoration: none;
+    border: 1px solid #d8a47f;
+}
+
+.button-general:hover {
+    background-color: #e57a44;
+}
+
+/*------------------------------Mobile Navigation Bottom Bar-------------------------*/
 .nav-mobile {
     position: fixed;
     bottom: 0;
@@ -226,25 +92,138 @@ h3{
     -webkit-tap-highlight-color: transparent;
     /* transition: background-color 0.1s ease-in-out; */
     z-index: 1;
-    padding-top:0.4rem;
+    padding-top: 0.4rem;
 }
 
-.nav-mobile-link:hover{
+.nav-mobile-link:hover {
     color: var(--baby-powder);
 }
 
-.nav-mobile-link:focus{
+.nav-mobile-link:focus {
     color: var(--baby-powder);
 }
 
-.nav-mobile-active{
+.nav-mobile-active {
     color: var(--baby-powder);
 }
 
-.nav-mobile-icons{
+.nav-mobile-icons {
     font-size: 1rem;
+}
+
+/*----------------------------Hero slide---------------------------------------------*/
+.full-height {
+    min-height: 100vh;
+}
+
+.introduction-text {
+    color: #eaeaea;
+}
+
+.background-intro {
+    background-image: url(DownloadedTestImages/image-from-rawpixel-id-2524831-jpeg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
 }
 
 .typed-cursor {
     color: black;
+}
+
+/*-------------------------------Profile Slide---------------------------------------*/
+.background-profile {
+    background-color: #eaeaea;
+}
+
+.profile-picture {
+    display: block;
+    border-radius: 50%;
+
+}
+
+.profile-slide {
+    margin: 3rem 0rem;
+}
+
+/*--------------------------------Experience slide-----------------------------------*/
+.background-experience {
+    background-color: #eaeaea;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.show-more-button {
+    display: block;
+    margin: 0.5rem 0rem 1rem 0rem;
+}
+
+.show-more-text {
+    padding-bottom: 1rem;
+}
+
+/*---------------------------------Abilities Slide------------------------------------*/
+.background-abilities {
+    background-color: #eaeaea;
+}
+
+.button-cv {
+    margin: 0rem 0rem 1rem 0rem;
+    display: block;
+}
+
+/*---------------------------------Footer Contact Slide-------------------------------*/
+.background-footer-contact {
+    background-color: #323232;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.contact-icons {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-icons:hover {
+    color: var(--cyanblue);
+}
+
+
+#footer-thanks {
+    color: #ababab;
+    text-align: center;
+}
+
+#footer-thanks>a {
+    color: #cdcdcd;
+    text-decoration: none;
+}
+
+#footer-thanks>a:hover {
+    color: var(--cyanblue);
+    text-decoration: none;
+}
+
+/*-------------------------Media queries for screens bigger than md------------------*/
+@media (min-width: 768px) {
+    body {
+        margin-bottom: 0rem;
+    }
+
+    .contact-icons {
+        font-size: 2rem;
+    }
+
+    .footer {
+        display: flex;
+    }
+
+    .background-intro {
+        background-attachment: fixed;
+    }
 }
