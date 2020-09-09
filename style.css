@@ -43,7 +43,7 @@ body {
     background-image: url(DownloadedTestImages/image-from-rawpixel-id-2524831-jpeg.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .background-profile{
@@ -160,6 +160,10 @@ h1>a:hover{
 
     .footer{
         display: flex;
+    }
+
+    .background-intro{
+        background-attachment: fixed;
     }
 }
 
