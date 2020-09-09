@@ -222,7 +222,7 @@ h3{
     -webkit-tap-highlight-color: transparent;
     /* transition: background-color 0.1s ease-in-out; */
     z-index: 1;
-    padding-top:0.3rem;
+    padding-top:0.4rem;
 }
 
 .nav-mobile-link:hover{
