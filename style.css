@@ -1,4 +1,5 @@
 /*---------------------------Primary Colors and General Proprieties------------------*/
+
 :root {
     --rich-black-fogra-29: #0d1821ff;
     --independence: #344966ff;
@@ -12,14 +13,12 @@
     --viloetdeschis: #4F5D75;
     --gri-deschis: #BFC0C0;
     --somon: #EF8354;
-
     --chinese-red: #a53f2bff;
     --persian-green: #25a18eff;
     --alice-blue: #e7ecefff;
     --raisin-black: #272932ff;
     --tumbleweed: #d8a47fff;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -63,7 +62,9 @@ h3 {
     background-color: #e57a44;
 }
 
+
 /*------------------------------Mobile Navigation Bottom Bar-------------------------*/
+
 .nav-mobile {
     position: fixed;
     bottom: 0;
@@ -111,7 +112,9 @@ h3 {
     font-size: 1rem;
 }
 
+
 /*----------------------------Hero slide---------------------------------------------*/
+
 .full-height {
     min-height: 100vh;
 }
@@ -131,24 +134,27 @@ h3 {
     color: black;
 }
 
+
 /*-------------------------------Profile Slide---------------------------------------*/
+
 .background-profile {
-    background-color: #eaeaea;
+    background-color: var(--raisin-black);
 }
 
 .profile-picture {
     display: block;
     border-radius: 50%;
-
 }
 
 .profile-slide {
     margin: 3rem 0rem;
 }
 
+
 /*--------------------------------Experience slide-----------------------------------*/
+
 .background-experience {
-    background-color: #eaeaea;
+    background-color: var(--raisin-black);
 }
 
 .section-header {
@@ -164,9 +170,11 @@ h3 {
     padding-bottom: 1rem;
 }
 
+
 /*---------------------------------Abilities Slide------------------------------------*/
+
 .background-abilities {
-    background-color: #eaeaea;
+    background-color: var(--raisin-black);
 }
 
 .button-cv {
@@ -174,7 +182,9 @@ h3 {
     display: block;
 }
 
+
 /*---------------------------------Footer Contact Slide-------------------------------*/
+
 .background-footer-contact {
     background-color: #323232;
 }
@@ -193,7 +203,6 @@ h3 {
     color: var(--cyanblue);
 }
 
-
 #footer-thanks {
     color: #ababab;
     text-align: center;
@@ -209,20 +218,19 @@ h3 {
     text-decoration: none;
 }
 
+
 /*-------------------------Media queries for screens bigger than md------------------*/
+
 @media (min-width: 768px) {
     body {
         margin-bottom: 0rem;
     }
-
     .contact-icons {
         font-size: 2rem;
     }
-
     .footer {
         display: flex;
     }
-
     .background-intro {
         background-attachment: fixed;
     }
