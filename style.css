@@ -40,14 +40,19 @@ body {
 }
 
 .background-intro{
-    background-image: url(Images/CodeBackgroundBlurredGreyscaled.jpg);
+    background-image: url(DownloadedTestImages/image-from-rawpixel-id-2524831-jpeg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .background-profile{
-    background-color: var(--baby-powder);
+    /* background-color: var(--baby-powder); */
+    background-color: #eaeaea;
+}
+
+.background-experience{
+    background-color: #eaeaea;
 }
 
 h1, h2{
@@ -78,8 +83,14 @@ h1{
     margin-bottom: 1rem;
 }
 
+
+
 .background-contact{
-    background-color: #434343;
+    background-color: #323232;
+}
+
+.background-abilities{
+    background-color: #eaeaea;
 }
 
 h1>a {
@@ -210,20 +221,25 @@ h3{
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     /* transition: background-color 0.1s ease-in-out; */
+    z-index: 1;
 }
 
 .nav-mobile-link:hover{
-    color: white;
+    color: var(--baby-powder);
 }
 
 .nav-mobile-link:focus{
-    color: white;
+    color: var(--baby-powder);
 }
 
 .nav-mobile-active{
-    color: white;
+    color: var(--baby-powder);
 }
 
 .nav-mobile-icons{
     font-size: 1rem;
+}
+
+.typed-cursor {
+    color: black;
 }

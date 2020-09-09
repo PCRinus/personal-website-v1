@@ -16,7 +16,7 @@
 </head>
 
 <body>
-
+    <!-- Navbar pentru mobil -->
     <nav class="nav-mobile d-md-none">
           <a href="#slideProfil" class="nav-mobile-link">
             <i class="fas fa-user-circle nav-icons nav-mobile-icons"></i>
@@ -39,7 +39,7 @@
                 <div class="col align-self-center">
                     <h1 class="introduction-text">Mircea Casapu</h1>
                     <h1 class="introduction-text">
-                        Sunt un <span class="typed" style="color: var(--cyanblue)"></span>
+                        Sunt un <span class="typed" style="color: black"></span>
                     </h1>
                 </div>
 
@@ -239,7 +239,7 @@
 
                 <div class="col-md-4">
                     <h3>Limbi</h3>
-                    <p><strong>Romana</strong> (Limba materna)<br><strong>Engeza</strong> (Daily
+                    <p><strong>Romana</strong> (Limba materna)<br><strong>Engleza</strong> (Daily
                         use)<br><strong>Franceza</strong> (Un petit peu)</p>
                 </div>
             </div>
@@ -298,11 +298,13 @@
 
     <script>
         var typed = new Typed('.typed', {
-            strings: ['Web Developer^800', 'UI/UX Enthusiast^800', 'Pasionat de Tehnologie^800'],
+            strings: ['Web Developer^1000', 'UI/UX Designer^1000'],
             smartBackspace: true,
             typeSpeed: 60,
             backSpeed: 60,
-            loop: true
+            cursorChar: '_',
+            loop: true,
+            fadeOut: true
         });
     </script>
 
