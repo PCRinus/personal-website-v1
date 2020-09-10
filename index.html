@@ -42,39 +42,29 @@
         </div>
     </nav>
 
-    <ul class="nav justify-content-center fixed-top">
+    <!-- navbar desktop -->
+    <ul class="nav fixed-top nav-desktop">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
+            <a class="nav-link nav-desktop-link" aria-current="page" href="#slideProfil">Profil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+            <a class="nav-link nav-desktop-link" href="#slideExperienta">Experienta</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+            <a class="nav-link nav-desktop-link" href="#slideAbilitati">Abilitati</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
+    </ul>
 
-    <!-- Introduction Slide -->
+    <!-- Hero Introduction Slide -->
     <section class="background-intro">
         <div class="container-md">
             <div class="row full-height" id="slideIntroducere">
                 <div class="col align-self-center">
                     <h1 class="introduction-text-header">Mircea Casapu</h1>
                     <h1 class="introduction-text">
-                        Sunt un <span class="typed"></span>
+                        Junior <span class="typed"></span>
                     </h1>
                 </div>
-
-                <!-- <div class="w-100" style="height: 0vh;"></div>
-
-                <div class="col align-self-center">
-                    <a href="#slideProfil" class="btn button-general button-cta">Profil</a>
-                    <a href="#slideExperienta" class="btn button-general button-cta">Experienta</a>
-                    <a href="#slideAbilitati" class="btn button-general button-cta">Abilitati</a>
-                </div> -->
             </div>
         </div>
     </section>
@@ -147,7 +137,7 @@
                         <strong>Diplomă de Licență - Facultatea de Automatică și Calculatoare - Ingineria
                             Sistemelor</strong>
                     </p>
-                    <p><i class="fas fa-map-marker-alt"></i> Timisoara, 2017-Prezent</p>
+                    <p><i class="fas fa-map-marker-alt experience-fa-icons"></i> Timisoara, 2017-Prezent</p>
                     <button class="btn button-general show-more-button ">Mai mult</button>
                     <p class="show-more-text invisible-text">
                         În cadrul UPT am studiat diverse materii de OOP (Java, C#, C++) și robotica de bază prin
@@ -167,7 +157,7 @@
                     <p>
                         <strong>Diplomă de Bacalaureat - Matematică-Informatică</strong>
                     </p>
-                    <p><i class="fas fa-map-marker-alt"></i> Timisoara, 2013-2017</p>
+                    <p><i class="fas fa-map-marker-alt experience-fa-icons"></i> Timisoara, 2013-2017</p>
                     <button class="btn button-general show-more-button ">Mai mult</button>
                     <p class="show-more-text invisible-text">
                         În timpul liceului am avut primele contacte cu programarea, specific C/C++ și puțină dezvoltare
@@ -194,8 +184,9 @@
                     <p>
                         <strong>Web Developer</strong> <br>
                     </p>
-                    <p><i class="fas fa-map-marker-alt"></i> Timisoara/Remote, Sept 2020-Prezent</p>
-                    <p><i class="fas fa-link"></i> <a href="https://www.smartvalue.io/" target="_blank"
+                    <p><i class="fas fa-map-marker-alt experience-fa-icons"></i> Timisoara/Remote, Sept 2020-Prezent</p>
+                    <p><i class="fas fa-link experience-fa-icons"></i> <a class="experience-company-links"
+                            href="https://www.smartvalue.io/" target="_blank"
                             rel="noopener">https://www.smartvalue.io/</a>
                     </p>
                     <button class="btn button-general show-more-button ">Mai mult</button>
@@ -215,10 +206,11 @@
                         <strong>Junior Software Development Engineer</strong> <br>
                     </p>
                     <p>
-                        <i class="fas fa-map-marker-alt"></i> Timisoara/Remote, Dec 2019-Sept 2020
+                        <i class="fas fa-map-marker-alt experience-fa-icons"></i> Timisoara/Remote, Dec 2019-Sept 2020
                     </p>
                     <p>
-                        <i class="fas fa-link"></i> <a href="https://www.nokia.com/ro_ro/" target="_blank"
+                        <i class="fas fa-link experience-fa-icons"></i> <a class="experience-company-links"
+                            href="https://www.nokia.com/ro_ro/" target="_blank"
                             rel="noopener">https://www.nokia.com/ro_ro/</a>
                     </p>
                     <button class="btn button-general show-more-button ">Mai mult</button>
@@ -250,18 +242,30 @@
             <hr>
 
             <div class="row">
-                <div class="col-md-4">
-                    <h3>Skills</h3>
-                    <p>HTML5, CSS3, JavaScript, Boostrap, jQuery, ASP.NET, MVC, SQL, Ajax, Java, C#, C/C++</p>
+                <div class="col-md-3">
+                    <h2>Skills</h2>
                 </div>
+                <div class="col-md-9">
+                    <!-- <p>HTML5, CSS3, JavaScript, Boostrap, jQuery, ASP.NET, MVC, SQL, Ajax, Java, C#, C/C++</p> -->
+                    <p><i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-bootstrap"></i><i
+                            class="fab fa-js-square"></i></p>
+                </div>
+            </div>
 
-                <div class="col-md-4">
-                    <h3>Tools</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>Tools</h2>
+                </div>
+                <div class="col-md-9">
                     <p>Visual Studio, Visual Studio Code, Git/Github, Jira</p>
                 </div>
+            </div>
 
-                <div class="col-md-4">
-                    <h3>Limbi</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>Limbi</h2>
+                </div>
+                <div class="col-md-9">
                     <p><strong>Romana</strong> (Limba materna)<br><strong>Engleza</strong> (Daily
                         use)<br><strong>Franceza</strong> (Un petit peu)</p>
                 </div>
@@ -270,9 +274,9 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-3">
-                    <a href="Files/CvCasapuMircea.pdf" download class="btn btn-lg button-general button-cv ">
-                        Descarca-mi
-                        CV-ul </a>
+                    <a href="https://drive.google.com/file/d/14_VkpWXMzq_5monz7cpl_Mb5Y4mipRDc/view?usp=sharing"
+                        target="_blank" rel="noopener" class="btn btn-lg button-general button-cv ">
+                        CV-ul meu</a>
                 </div>
             </div>
         </div>
@@ -282,17 +286,13 @@
     <section class="background-footer-contact">
         <div class="container-md" id="slideContact">
             <div class="row">
-                <div class="col-md-4 footer-links justify-content-center">
+                <div class="col-md-6 footer-links justify-content-end">
                     <a class="contact-icons" href="https://www.linkedin.com/in/mircea-casapu-54a794162" target="_blank"
                         rel="noopener"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
                 </div>
-                <div class="col-md-4 footer-links justify-content-center">
+                <div class="col-md-6 footer-links justify-content-start">
                     <a class="contact-icons" href="https://github.com/PCRinus" target="_blank" rel="noopener"><i
                             class="fab fa-github-square"></i> GitHub</a>
-                </div>
-                <div class="col-md-4 footer-links justify-content-center">
-                    <a class="contact-icons" href="https://www.facebook.com/mrc1998/" target="_blank" rel="noopener"><i
-                            class="fab fa-facebook"></i> Facebook</a>
                 </div>
             </div>
 

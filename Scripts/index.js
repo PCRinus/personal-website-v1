@@ -15,4 +15,21 @@ $(document).ready(function () {
       $(mobileNavLinks[i]).addClass("nav-mobile-active")
     })
   }
+
+  var heroHeight = $("#slideIntroducere").height();
+  $(window).scroll(function() {
+    var amountScrolled = $(window).scrollTop()
+    var heroHeightCorrected = heroHeight / 3
+    console.log(heroHeightCorrected)
+    if(amountScrolled > heroHeightCorrected)
+    {
+      $(".nav-desktop").addClass("nav-desktop-scrolled")
+      $(".nav-desktop-link").addClass("nav-desktop-link-scrolled")
+    }
+    else{
+      $(".nav-desktop").removeClass("nav-desktop-scrolled")
+      $(".nav-desktop-link").removeClass("nav-desktop-link-scrolled")
+    }
+  })
+
 })

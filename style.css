@@ -10,7 +10,8 @@
   --alice-blue: #e7ecefff;
   --raisin-black: #272932ff;
   --tumbleweed: #d8a47fff;
-  --footer-grey: #323232;
+  --footer-grey: #656565;
+  --dirty-white: #eaeaea;
 }
 
 html {
@@ -42,7 +43,11 @@ h2 {
 }
 
 h3 {
-  color: var(--raisin-black);
+  /* color: var(--baby-powder); */
+}
+
+p{
+  /* color: var(--baby-powder); */
 }
 
 .quotes {
@@ -51,7 +56,7 @@ h3 {
 
 .button-general {
   background-color: var(--somon);
-  color: white;
+  color: var(--raisin-black);
   text-decoration: none;
   border: 1px solid #d8a47f;
 }
@@ -128,17 +133,48 @@ h3 {
   font-size: 1rem;
 }
 
+/*----------------------------Desktop navigation Bar---------------------------------*/
+.nav-desktop{
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-desktop-scrolled{
+  background-color: var(--persian-green);
+}
+
+.nav-desktop-link{
+  font-size: 1.5rem;
+  color: var(--persian-green);
+  transition: all 0.3s ease;
+}
+
+.nav-desktop-link:hover{
+  color: var(--baby-powder);
+  transition: all 0.3s ease;
+}
+
+.nav-desktop-link-scrolled{
+  color: var(--baby-powder);
+}
+
+.nav-desktop-link-scrolled:hover{
+  color: var(--raisin-black);
+}
+
 /*----------------------------Hero slide---------------------------------------------*/
 .full-height {
   min-height: 100vh;
 }
 
 .introduction-text {
-  color: #eaeaea;
+  color: var(--dirty-white);
 }
 
 .introduction-text-header{
-  color: #eaeaea;
+  color: var(--dirty-white);
   font-size: 2.5rem;
 }
 
@@ -159,7 +195,7 @@ h3 {
 
 /*-------------------------------Profile Slide---------------------------------------*/
 .background-profile {
-  background-color: #eaeaea;
+  background-color: var(--dirty-white);
 }
 
 .profile-picture {
@@ -173,7 +209,7 @@ h3 {
 
 /*--------------------------------Experience slide-----------------------------------*/
 .background-experience {
-  background-color: #eaeaea;
+  background-color: var(--dirty-white);
 }
 
 .section-header {
@@ -190,9 +226,17 @@ h3 {
   display: none;
 }
 
+.experience-fa-icons{
+  color: var(--persian-green);
+}
+
+.experience-company-links{
+  color: black;
+}
+
 /*---------------------------------Abilities Slide------------------------------------*/
 .background-abilities {
-  background-color: #eaeaea;
+  background-color: var(--dirty-white);
 }
 
 .button-cv {
@@ -211,6 +255,7 @@ h3 {
 
 .footer-links {
   margin-top: 1rem;
+  display: flex;
 }
 
 .contact-icons {
@@ -220,7 +265,8 @@ h3 {
 }
 
 .contact-icons:hover {
-  color: var(--cyanblue);
+  color: var(--persian-green);
+  transition: all 0.3s ease;
 }
 
 .footer-thanks {
@@ -229,13 +275,14 @@ h3 {
 }
 
 .footer-thanks > a {
-  color: #cdcdcd;
+  color: var(--persian-green);
   text-decoration: none;
 }
 
 .footer-thanks > a:hover {
-  color: var(--cyanblue);
-  text-decoration: none;
+  color: var(--persian-green);
+  transition: all 0.3s ease;
+  text-decoration: underline;
 }
 
 /*-------------------------Media queries for screens bigger than md------------------*/
@@ -243,6 +290,15 @@ h3 {
   body {
     margin-bottom: 0rem;
   }
+
+  .introduction-text {
+    font-size: 3rem;
+  }
+
+  .introduction-text-header{
+    font-size: 5rem;
+  }
+
   .contact-icons {
     font-size: 2rem;
   }
@@ -255,4 +311,3 @@ h3 {
     background-attachment: fixed;
   }
 }
-/*# sourceMappingURL=style.css.map */
