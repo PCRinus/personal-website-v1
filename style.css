@@ -1,22 +1,16 @@
 /*---------------------------Primary Colors and General Proprieties------------------*/
 :root {
-  --rich-black-fogra-29: #0d1821ff;
-  --independence: #344966ff;
   --light-steel-blue: #b4cdedff;
   --baby-powder: #f0f4efff;
   --sage: #bfcc94ff;
-  --black: #000000;
-  --rythm: #767B91;
   --cyanblue: #759EB8;
-  --viloetinchis: #2D3142;
-  --viloetdeschis: #4F5D75;
-  --gri-deschis: #BFC0C0;
   --somon: #EF8354;
   --chinese-red: #a53f2bff;
   --persian-green: #25a18eff;
   --alice-blue: #e7ecefff;
   --raisin-black: #272932ff;
   --tumbleweed: #d8a47fff;
+  --footer-grey: #323232;
 }
 
 html {
@@ -44,11 +38,11 @@ h1 {
 
 h1,
 h2 {
-  color: var(--cyanblue);
+  color: var(--persian-green);
 }
 
 h3 {
-  color: var(--independence);
+  color: var(--raisin-black);
 }
 
 .quotes {
@@ -74,7 +68,8 @@ h3 {
   height: 3rem;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-  background-color: var(--independence);
+  background-color: var(--footer-grey);
+  /* background-color: transparent; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,20 +137,29 @@ h3 {
   color: #eaeaea;
 }
 
+.introduction-text-header{
+  color: #eaeaea;
+  font-size: 2.5rem;
+}
+
 .background-intro {
-  background-image: url(DownloadedTestImages/image-from-rawpixel-id-2524831-jpeg.jpg);
+  background-image: url(DownloadedTestImages/image-from-rawpixel-id-2351022-jpeg.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
 }
 
+.typed{
+  color: var(--persian-green);
+}
+
 .typed-cursor {
-  color: black;
+  color: var(--persian-green);
 }
 
 /*-------------------------------Profile Slide---------------------------------------*/
 .background-profile {
-  background-color: var(--raisin-black);
+  background-color: #eaeaea;
 }
 
 .profile-picture {
@@ -169,7 +173,7 @@ h3 {
 
 /*--------------------------------Experience slide-----------------------------------*/
 .background-experience {
-  background-color: var(--raisin-black);
+  background-color: #eaeaea;
 }
 
 .section-header {
@@ -183,11 +187,12 @@ h3 {
 
 .show-more-text {
   padding-bottom: 1rem;
+  display: none;
 }
 
 /*---------------------------------Abilities Slide------------------------------------*/
 .background-abilities {
-  background-color: var(--raisin-black);
+  background-color: #eaeaea;
 }
 
 .button-cv {
@@ -197,7 +202,11 @@ h3 {
 
 /*---------------------------------Footer Contact Slide-------------------------------*/
 .background-footer-contact {
-  background-color: #323232;
+  /* background-color: #323232; */
+  background-image: url(DownloadedTestImages/image-from-rawpixel-id-2351022-jpeg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
 }
 
 .footer-links {
@@ -214,17 +223,17 @@ h3 {
   color: var(--cyanblue);
 }
 
-#footer-thanks {
+.footer-thanks {
   color: #ababab;
   text-align: center;
 }
 
-#footer-thanks > a {
+.footer-thanks > a {
   color: #cdcdcd;
   text-decoration: none;
 }
 
-#footer-thanks > a:hover {
+.footer-thanks > a:hover {
   color: var(--cyanblue);
   text-decoration: none;
 }
