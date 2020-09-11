@@ -170,7 +170,7 @@ h2 {
 }
 
 .background-intro {
-  background-image: url(Images/BackgroundImgGrey-webp.webp);
+  background-image: url(Images/Background-Compressed.jpg);
   background-size: cover;
   background-attachment: scroll;
 }
@@ -250,6 +250,8 @@ h2 {
   flex-direction: column;
   align-items: center;
   min-width: 6rem;
+  max-width: 6rem;
+  max-height: 5rem;
 }
 
 .abilities-flex-icons{
@@ -260,7 +262,7 @@ h2 {
 /*---------------------------------Footer Contact Slide-------------------------------*/
 .background-footer-contact {
   /* background-color: #323232; */
-  background-image: url(Images/BackgroundImgGrey-webp.webp);
+  background-image: url(Images/Background-Compressed.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
@@ -318,10 +320,6 @@ h2 {
   
   .abilities-flex-container{
     justify-content: start;
-  }
-
-  .abilities-flex-paragraph{
-    min-width: 6rem;
   }
 
   .contact-icons {
