@@ -20,7 +20,6 @@ $(document).ready(function () {
   $(window).scroll(function() {
     var amountScrolled = $(window).scrollTop()
     var heroHeightCorrected = heroHeight / 3
-    console.log(heroHeightCorrected)
     if(amountScrolled > heroHeightCorrected)
     {
       $(".nav-desktop").addClass("nav-desktop-scrolled")
