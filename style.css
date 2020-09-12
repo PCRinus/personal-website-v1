@@ -27,8 +27,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-bottom: 3rem;
 }
 
@@ -64,18 +64,18 @@ h2 {
   width: 100%;
   height: 3rem;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   background-color: var(--persian-green);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   overflow-x: auto;
 }
 
@@ -85,17 +85,17 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   min-width: 50px;
   overflow: hidden;
   white-space: nowrap;
@@ -125,34 +125,40 @@ h2 {
 }
 
 /*----------------------------Desktop navigation Bar---------------------------------*/
-.nav-desktop{
+.nav-desktop {
   display: flex;
   justify-content: center;
   background-color: transparent;
   transition: all 0.3s ease;
 }
 
-.nav-desktop-scrolled{
+.nav-desktop-scrolled {
   background-color: var(--persian-green);
 }
 
-.nav-desktop-link{
+.nav-desktop-link {
   font-size: 1.5rem;
   color: var(--persian-green);
   transition: all 0.3s ease;
 }
 
-.nav-desktop-link:hover{
+.nav-desktop-link:hover {
   color: var(--baby-powder);
   transition: all 0.3s ease;
 }
 
-.nav-desktop-link-scrolled{
+.nav-desktop-link-scrolled {
   color: var(--baby-powder);
 }
 
-.nav-desktop-link-scrolled:hover{
+.nav-desktop-link-scrolled:hover {
   color: var(--raisin-black);
+}
+
+.div-hr {
+  width: 100%;
+  border-top: 0.5px solid #ababab;
+  margin: 1rem 0;
 }
 
 /*----------------------------Hero slide---------------------------------------------*/
@@ -164,7 +170,7 @@ h2 {
   color: var(--dirty-white);
 }
 
-.introduction-text-header{
+.introduction-text-header {
   color: var(--dirty-white);
   font-size: 2.5rem;
 }
@@ -175,7 +181,7 @@ h2 {
   background-attachment: scroll;
 }
 
-.typed{
+.typed {
   color: var(--persian-green);
 }
 
@@ -216,11 +222,11 @@ h2 {
   display: none;
 }
 
-.experience-fa-icons{
+.experience-fa-icons {
   color: var(--persian-green);
 }
 
-.experience-company-links{
+.experience-company-links {
   color: black;
 }
 
@@ -234,18 +240,23 @@ h2 {
   display: block;
 }
 
-.abilities-header{
-  color:var(--raisin-black);
+.abilities-header {
+  color: var(--raisin-black);
+  text-align: center;
 }
 
-.abilities-flex-container{
+.abilities-header-2 {
+  color: var(--raisin-black);
+}
+
+.abilities-flex-container {
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.abilities-flex-paragraph{
+.abilities-flex-paragraph {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,7 +264,7 @@ h2 {
   max-height: 5rem;
 }
 
-.abilities-flex-paragraph > img {
+.abilities-flex-paragraph>img {
   max-height: 3.5rem;
 }
 
@@ -287,12 +298,12 @@ h2 {
   text-align: center;
 }
 
-.footer-thanks > a {
+.footer-thanks>a {
   color: var(--persian-green);
   text-decoration: none;
 }
 
-.footer-thanks > a:hover {
+.footer-thanks>a:hover {
   color: var(--persian-green);
   transition: all 0.3s ease;
   text-decoration: underline;
@@ -308,30 +319,32 @@ h2 {
     font-size: 3rem;
   }
 
-  .introduction-text-header{
+  .introduction-text-header {
     font-size: 5rem;
   }
 
-  .abilities-header{
-    color:var(--persian-green);
+  .abilities-header {
+    color: var(--persian-green);
   }
-  
-  .abilities-flex-container{
+
+  .abilities-flex-container {
     justify-content: start;
   }
 
-  .abilities-flex-paragraph{
+  .abilities-flex-paragraph {
     min-width: 7rem;
   }
 
   .contact-icons {
     font-size: 2rem;
   }
+
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   .background-intro {
     background-attachment: fixed;
     background-position: center;
