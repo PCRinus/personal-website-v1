@@ -253,6 +253,10 @@ h2 {
   max-height: 5rem;
 }
 
+.abilities-flex-paragraph > img {
+  max-height: 3.5rem;
+}
+
 /*---------------------------------Footer Contact Slide-------------------------------*/
 .background-footer-contact {
   /* background-color: #323232; */
