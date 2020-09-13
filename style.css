@@ -326,7 +326,14 @@ h2 {
 
   .abilities-header {
     color: var(--persian-green);
+    text-align: left;
   }
+
+  .abilities-header-2 {
+    color: var(--persian-green);
+    text-align: left;
+  }
+
 
   .abilities-flex-container {
     justify-content: start;
