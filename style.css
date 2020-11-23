@@ -278,6 +278,11 @@ h2 {
   text-align: left;
 }
 
+.form-control:focus {
+  border-color: rgb(229, 122, 68);
+  box-shadow: 0 0 0 0.2rem rgba(229, 122, 68, 0.35);
+}
+
 /*---------------------------------Footer Contact Slide-------------------------------*/
 .background-footer-contact {
   background-image: url(Images/Background-Compressed.jpg);
