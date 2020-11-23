@@ -367,3 +367,8 @@ h2 {
     background-position: center;
   }
 }
+
+/*------------------------------------CAPTCHA-----------------------------------------*/
+.g-recaptcha {
+  display: inline-block;
+}
