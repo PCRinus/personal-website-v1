@@ -99,7 +99,7 @@ h2 {
   min-width: 50px;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--baby-powder);
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;

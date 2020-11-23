@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $("#inputName").val("");
   $("#inputEmail").val("");
+  $("#inputMessage").val("");
 
   var moreButtons = document.getElementsByClassName("show-more-button");
   var moreText = document.getElementsByClassName("show-more-text");

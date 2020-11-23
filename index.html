@@ -41,33 +41,39 @@
   </head>
 
   <body>
-    <!-- New Navbar pentru mobil -->
+    <!-- Navbar pentru mobil -->
     <nav class="nav-mobile d-md-none">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-4">
+          <div class="col-3">
             <a href="#slideProfil" class="nav-mobile-link">
               <i class="fas fa-user-circle nav-icons nav-mobile-icons"></i>
               <span class="nav__text">Profil</span>
             </a>
           </div>
-          <div class="col-4">
+          <div class="col-3">
             <a href="#slideExperienta" class="nav-mobile-link">
               <i class="fas fa-list-ul nav-icons nav-mobile-icons"></i>
               <span class="nav__text">Experienta</span>
             </a>
           </div>
-          <div class="col-4">
+          <div class="col-3">
             <a href="#slideAbilitati" class="nav-mobile-link">
               <i class="fas fa-grip-horizontal nav-mobile-icons"></i>
               <span class="nav__text">Abilitati</span>
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="#slideContact" class="nav-mobile-link">
+              <i class="fas fa-id-card-alt nav-icons nav-mobile-icons"></i>
+              <span class="nav__text">Contact</span>
             </a>
           </div>
         </div>
       </div>
     </nav>
 
-    <!-- navbar desktop -->
+    <!-- Navbar desktop -->
     <div class="d-none d-md-block">
       <ul class="nav fixed-top nav-desktop">
         <li class="nav-item">
@@ -86,6 +92,11 @@
         <li class="nav-item">
           <a class="nav-link nav-desktop-link" href="#slideAbilitati"
             >Abilitati</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-desktop-link" href="#slideContact"
+            >Contact</a
           >
         </li>
       </ul>
@@ -475,7 +486,7 @@
     <!--Contact form Slide-->
     <section class="background-contact-form">
       <div class="container-md">
-        <div class="row">
+        <div class="row" id="slideContact">
           <div class="col">
             <h1 class="section-header">Contacteaza-ma</h1>
             <!-- <p class="quotes">
@@ -525,8 +536,10 @@
           <div class="quotes">
             <div class="g-recaptcha" data-netlify-recaptcha="true"></div>
           </div>
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn button-general">Trimite</button>
         </form>
+
+        <div class="div-hr"></div>
       </div>
     </section>
 
