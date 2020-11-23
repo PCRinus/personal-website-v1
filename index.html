@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-14MJ8B7BGV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-14MJ8B7BGV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-14MJ8B7BGV');
-</script>
+      gtag("config", "G-14MJ8B7BGV");
+    </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +22,7 @@
       name="Description"
       content="Portofoliul lui Mircea Casapu. Junior Web developer, Junior UI/UX Designer."
     />
-    <title>Mircea Casapu - CV Online</title>
+    <title>Mircea Casapu | CV Online</title>
 
     <!-- Bootstrap -->
     <link
@@ -31,6 +36,8 @@
       src="https://kit.fontawesome.com/dc2b99e1d2.js"
       crossorigin="anonymous"
     ></script>
+    <!--ReCaptcha-->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
 
   <body>
@@ -129,6 +136,21 @@
             <p><strong>Locatie: </strong> Timisoara, Romania</p>
           </div>
         </div>
+        <div class="div-hr"></div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a
+              href="https://drive.google.com/file/d/14_VkpWXMzq_5monz7cpl_Mb5Y4mipRDc/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-lg button-general button-cv"
+            >
+              CV-ul meu</a
+            >
+          </div>
+        </div>
+
         <div class="div-hr"></div>
       </div>
     </section>
@@ -287,7 +309,7 @@
       </div>
     </section>
 
-    <!--Abislities Slide-->
+    <!--Abilities Slide-->
     <section class="background-abilities" id="slideAbilitati">
       <div class="container-md">
         <div class="row">
@@ -447,19 +469,56 @@
           </div>
         </div>
         <div class="div-hr"></div>
+      </div>
+    </section>
 
-        <div class="row justify-content-center">
-          <div class="col-md-3">
-            <a
-              href="https://drive.google.com/file/d/14_VkpWXMzq_5monz7cpl_Mb5Y4mipRDc/view?usp=sharing"
-              target="_blank"
-              rel="noopener"
-              class="btn btn-lg button-general button-cv"
-            >
-              CV-ul meu</a
-            >
+    <!--Contact form Slide-->
+    <section class="background-contact-form">
+      <div class="container-md">
+        <div class="row">
+          <div class="col">
+            <h1 class="section-header">Contacteaza-ma</h1>
+            <!-- <p class="quotes">
+              "Ability is what you're capable of doing. Motivation determines
+              what you do. Attitude determines how well you do it."<br />
+              - Lou Holtz
+            </p> -->
           </div>
         </div>
+
+        <div class="div-hr"></div>
+
+        <form name="contact" method="POST" data-netlify="true">
+          <div class="row mb-3">
+            <label for="inputName" class="col-sm-2 col-form-label">
+              <h2 class="contact-form-labels">Nume</h2>
+            </label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="inputName" />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputEmail" class="col-sm-2 col-form-label">
+              <h2 class="contact-form-labels">Email</h2>
+            </label>
+            <div class="col-md-10">
+              <input type="email" class="form-control" id="inputEmail" />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputMessage" class="col-sm-2 col-form-label">
+              <h2 class="contact-form-labels">Mesaj</h2>
+            </label>
+            <div class="col-md-10">
+              <textarea
+                class="form-control"
+                id="inputMessage"
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
       </div>
     </section>
 

@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  $("#inputName").val("");
+  $("#inputEmail").val("");
+
   var moreButtons = document.getElementsByClassName("show-more-button");
   var moreText = document.getElementsByClassName("show-more-text");
   var mobileNavLinks = document.getElementsByClassName("nav-mobile-link")

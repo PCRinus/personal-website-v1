@@ -268,9 +268,18 @@ h2 {
   max-height: 3.5rem;
 }
 
+/*----------------Contact form slide--------------------------------------------------*/
+.background-contact-form{
+  background-color: var(--dirty-white);
+}
+
+.contact-form-labels {
+  color: var(--persian-green);
+  text-align: left;
+}
+
 /*---------------------------------Footer Contact Slide-------------------------------*/
 .background-footer-contact {
-  /* background-color: #323232; */
   background-image: url(Images/Background-Compressed.jpg);
   background-size: cover;
   background-position: center;
