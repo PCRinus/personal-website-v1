@@ -487,11 +487,6 @@
         <div class="row" id="slideContact">
           <div class="col">
             <h1 class="section-header">Contacteaza-ma</h1>
-            <!-- <p class="quotes">
-              "Ability is what you're capable of doing. Motivation determines
-              what you do. Attitude determines how well you do it."<br />
-              - Lou Holtz
-            </p> -->
           </div>
         </div>
 
@@ -508,7 +503,7 @@
               <h2 class="contact-form-labels">Nume</h2>
             </label>
             <div class="col-md-10">
-              <input type="text" class="form-control" id="inputName" />
+              <input type="text" class="form-control" id="inputName" name="Nume"/>
             </div>
           </div>
           <div class="row mb-3">
@@ -516,7 +511,7 @@
               <h2 class="contact-form-labels">Email</h2>
             </label>
             <div class="col-md-10">
-              <input type="email" class="form-control" id="inputEmail" />
+              <input type="email" class="form-control" id="inputEmail" name="Email"/>
             </div>
           </div>
           <div class="row mb-3">
@@ -528,11 +523,17 @@
                 class="form-control"
                 id="inputMessage"
                 rows="3"
+                name = "Mesaj"
               ></textarea>
             </div>
           </div>
           <div data-netlify-recaptcha="true"></div>
-          <button type="submit" class="btn button-general">Trimite</button>
+
+          <div class="row justify-content-center">
+            <div class="col-md-3 justify-content-center">
+              <button type="submit" class="btn btn-lg button-general button-form-submit">Trimite formularul</button>
+            </div>
+          </div>
         </form>
 
         <div class="div-hr"></div>
