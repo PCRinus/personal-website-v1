@@ -285,6 +285,7 @@ h2 {
 
 .button-form-submit{
   margin: 0 auto;
+  display: block;
 }
 
 /*---------------------------------Footer Contact Slide-------------------------------*/
