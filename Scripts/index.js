@@ -10,6 +10,7 @@ $(document).ready(function () {
   for (let i = 0; i < moreButtons.length; i++) {
     $(moreButtons[i]).click(function() {
       $(moreText[i]).slideToggle(200);
+      $(moreButtons[i].innerHTML = "Mai putin");
     })
   }
 
