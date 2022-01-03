@@ -1,625 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-14MJ8B7BGV"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-14MJ8B7BGV");
-    </script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-14MJ8B7BGV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="Description"
-      content="Portofoliul lui Mircea Casapu. Junior Web developer, Junior UI/UX Designer."
-    />
-    <title>Mircea Casapu | CV Online</title>
+    gtag("config", "G-14MJ8B7BGV");
+  </script>
 
-    <!-- Favicon -->
-    <link rel="icon" href="Images/Favicons/favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Description" content="Portofoliul lui Mircea Casapu. Junior Web developer, Junior UI/UX Designer." />
+  <title>Mircea Casapu | CV Online</title>
 
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="Dependencies\bootstrap-5.0.0-alpha1-dist\css\bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+  <!-- Favicon -->
+  <link rel="icon" href="Images/Favicons/favicon.ico">
 
-    <!-- FontAwesome -->
-    <script
-      src="https://kit.fontawesome.com/dc2b99e1d2.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--ReCaptcha-->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-  </head>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="Dependencies\bootstrap-5.0.0-alpha1-dist\css\bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
 
-  <body>
-    <!-- Navbar pentru mobil -->
-    <nav class="nav-mobile d-md-none">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-3">
-            <a href="#slideProfil" class="nav-mobile-link">
-              <i class="fas fa-user-circle nav-icons nav-mobile-icons"></i>
-              <span class="nav__text">Profil</span>
-            </a>
-          </div>
-          <div class="col-3">
-            <a href="#slideExperienta" class="nav-mobile-link">
-              <i class="fas fa-list-ul nav-icons nav-mobile-icons"></i>
-              <span class="nav__text">Experienta</span>
-            </a>
-          </div>
-          <div class="col-3">
-            <a href="#slideAbilitati" class="nav-mobile-link">
-              <i class="fas fa-grip-horizontal nav-mobile-icons"></i>
-              <span class="nav__text">Abilitati</span>
-            </a>
-          </div>
-          <div class="col-3">
-            <a href="#slideContact" class="nav-mobile-link">
-              <i class="fas fa-id-card-alt nav-icons nav-mobile-icons"></i>
-              <span class="nav__text">Contact</span>
-            </a>
-          </div>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/dc2b99e1d2.js" crossorigin="anonymous"></script>
+  <!--ReCaptcha-->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+
+<body>
+  <!-- Navbar pentru mobil -->
+  <nav class="nav-mobile d-md-none">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <a href="#slideProfil" class="nav-mobile-link">
+            <i class="fas fa-user-circle nav-icons nav-mobile-icons"></i>
+            <span class="nav__text">Profil</span>
+          </a>
+        </div>
+        <div class="col-3">
+          <a href="#slideExperienta" class="nav-mobile-link">
+            <i class="fas fa-list-ul nav-icons nav-mobile-icons"></i>
+            <span class="nav__text">Experienta</span>
+          </a>
+        </div>
+        <div class="col-3">
+          <a href="#slideAbilitati" class="nav-mobile-link">
+            <i class="fas fa-grip-horizontal nav-mobile-icons"></i>
+            <span class="nav__text">Abilitati</span>
+          </a>
+        </div>
+        <div class="col-3">
+          <a href="#slideContact" class="nav-mobile-link">
+            <i class="fas fa-id-card-alt nav-icons nav-mobile-icons"></i>
+            <span class="nav__text">Contact</span>
+          </a>
         </div>
       </div>
-    </nav>
-
-    <!-- Navbar desktop -->
-    <div class="d-none d-md-block">
-      <ul class="nav fixed-top nav-desktop">
-        <li class="nav-item">
-          <a
-            class="nav-link nav-desktop-link"
-            aria-current="page"
-            href="#slideProfil"
-            >Profil</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-desktop-link" href="#slideExperienta"
-            >Experienta</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-desktop-link" href="#slideAbilitati"
-            >Abilitati</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-desktop-link" href="#slideContact">Contact</a>
-        </li>
-      </ul>
     </div>
+  </nav>
 
-    <!-- Hero Introduction Slide -->
-    <section class="background-intro">
-      <div class="container-md">
-        <div class="row full-height" id="slideIntroducere">
-          <div class="col align-self-center">
-            <h1 class="introduction-text-header">Mircea Casapu</h1>
-            <h1 class="introduction-text">
-              Junior <span class="typed"></span>
-            </h1>
-          </div>
+  <!-- Navbar desktop -->
+  <div class="d-none d-md-block">
+    <ul class="nav fixed-top nav-desktop">
+      <li class="nav-item">
+        <a class="nav-link nav-desktop-link" aria-current="page" href="#slideProfil">Profil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-desktop-link" href="#slideExperienta">Experienta</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-desktop-link" href="#slideAbilitati">Abilitati</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-desktop-link" href="#slideContact">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Hero Introduction Slide -->
+  <section class="background-intro">
+    <div class="container-md">
+      <div class="row full-height" id="slideIntroducere">
+        <div class="col align-self-center">
+          <h1 class="introduction-text-header">Mircea Casapu</h1>
+          <h1 class="introduction-text">
+            Junior <span class="typed"></span>
+          </h1>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Prolfile Slide -->
-    <section class="background-profile">
-      <div class="container-md">
-        <div class="row justify-content-center profile-slide" id="slideProfil">
-          <div class="col-md-4 align-self-center">
-            <h2>Despre mine</h2>
-            <p>
-              Sunt student la
-              <strong>Universitatea Politehnica Timișoara,</strong> pasionat de
-              tehnologiile web. Îmi place să fiu creativ și să experimentez cu
-              diverse tehnologii. Am experiență cu toate nivelurile stack-ului,
-              dar în principal, mă axez pe dezvoltare
-              <strong>front-end.</strong>
-            </p>
-          </div>
-
-          <div class="col-md-4">
-            <img
-              class="profile-picture img-fluid"
-              src="Images/ProfilePictureCropped-Compressed.jpg"
-              alt="Profile Picture"
-            />
-          </div>
-
-          <div class="col-md-4 align-self-center">
-            <h2>Detalii</h2>
-            <p><strong>Nume complet: </strong>Casapu Mircea-Adrian</p>
-            <p><strong>Varsta: </strong> 22 de ani</p>
-            <p><strong>Locatie: </strong> Timisoara, Romania</p>
-          </div>
-        </div>
-        <div class="div-hr"></div>
-
-        <div class="row justify-content-center">
-          <div class="col-md-3">
-            <a
-              href="https://drive.google.com/file/d/14_VkpWXMzq_5monz7cpl_Mb5Y4mipRDc/view?usp=sharing"
-              target="_blank"
-              rel="noopener"
-              class="btn btn-lg button-general button-cv"
-            >
-              CV-ul meu</a
-            >
-          </div>
-        </div>
-
-        <div class="div-hr"></div>
-      </div>
-    </section>
-
-    <!-- Experience Slide -->
-    <section class="background-experience">
-      <div class="container-md">
-        <div
-          class="row justify-content-center education-slide"
-          id="slideExperienta"
-        >
-          <div class="col-md-12">
-            <h1 class="section-header">Experienta</h1>
-            <p class="quotes">
-              “People never learn anything by being told, they have to find out
-              for themselves.”<br />
-              - Paulo Coelho
-            </p>
-          </div>
-        </div>
-
-        <div class="div-hr"></div>
-
-        <div class="row">
-          <div class="col-3">
-            <h2>Educatie</h2>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-md-3">
-            <h3>Universitatea Politehnica Timisoara</h3>
-          </div>
-
-          <div class="col-md-9">
-            <p>
-              <strong
-                >Diplomă de Licență - Facultatea de Automatică și Calculatoare -
-                Ingineria Sistemelor</strong
-              >
-            </p>
-            <p>
-              <i class="fas fa-map-marker-alt experience-fa-icons"></i>
-              Timisoara, 2017-Prezent
-            </p>
-            <button class="btn button-general show-more-button">
-              Mai mult
-            </button>
-            <p class="show-more-text invisible-text">
-              În cadrul UPT am studiat diverse materii de OOP (Java, C#, C++) și
-              robotica de bază prin programarea pe plăcuțe Arduino. De asemenea,
-              am aprofundat diverse tehnologii web, precum JavaScript, SQL și
-              deployment pe diverse servicii de cloud, precum Azure.
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <h3>Liceul Teoretic "Grigore Moisil"</h3>
-          </div>
-
-          <div class="col-md-9">
-            <p>
-              <strong>Diplomă de Bacalaureat - Matematică-Informatică</strong>
-            </p>
-            <p>
-              <i class="fas fa-map-marker-alt experience-fa-icons"></i>
-              Timisoara, 2013-2017
-            </p>
-            <button class="btn button-general show-more-button">
-              Mai mult
-            </button>
-            <p class="show-more-text invisible-text">
-              În timpul liceului am avut primele contacte cu programarea,
-              specific C/C++ și puțină dezvoltare web(vanilla HTML/CSS). Aceasta
-              a fopst perioada care mi-a creat bazele programării, și care mi-a
-              trezit interesul în tehnologiile web.
-            </p>
-          </div>
-        </div>
-
-        <div class="div-hr"></div>
-
-        <div class="row">
-          <div class="col-3">
-            <h2>Cariera</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <h3>Smart Value Solutions</h3>
-          </div>
-
-          <div class="col-md-9">
-            <p><strong>Web Developer</strong> <br /></p>
-            <p>
-              <i class="fas fa-map-marker-alt experience-fa-icons"></i>
-              Timisoara/Remote, Sept 2020-Prezent
-            </p>
-            <p>
-              <i class="fas fa-link experience-fa-icons"></i>
-              <a
-                class="experience-company-links"
-                href="https://www.smartvalue.io/"
-                target="_blank"
-                rel="noopener"
-                >https://www.smartvalue.io/</a
-              >
-            </p>
-            <button class="btn button-general show-more-button">
-              Mai mult
-            </button>
-            <p class="show-more-text invisible-text">In cadrul companiei, task-urile mele cuprind dezvoltarea si mentinerea a tool-urilor interne de organizare, catalogare si refund a produselor din cadrul magazinului online <a href="https://www.newpharma.be/pharmacie/">Newpharma</a>. Limbajele in care lucrez sunt PHP si JavaScript, iar tool-urile pe care le folosesc sunt: PHPStorm, GitLab, Jenkins.
+  <!-- Prolfile Slide -->
+  <section class="background-profile">
+    <div class="container-md">
+      <div class="row justify-content-center profile-slide" id="slideProfil">
+        <div class="col-md-4 align-self-center">
+          <h2>Despre mine</h2>
+          <p>
+            Sunt student la
+            <strong>Universitatea Politehnica Timișoara,</strong> pasionat de
+            tehnologiile web. Îmi place să fiu creativ și să experimentez cu
+            diverse tehnologii. Am experiență cu toate nivelurile stack-ului,
+            dar în principal, mă axez pe dezvoltare
+            <strong>front-end.</strong>
           </p>
-          </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-3">
-            <h3>Nokia Networks</h3>
-          </div>
-
-          <div class="col-md-9">
-            <p><strong>Junior Software Development Engineer</strong> <br /></p>
-            <p>
-              <i class="fas fa-map-marker-alt experience-fa-icons"></i>
-              Timisoara/Remote, Dec 2019-Sept 2020
-            </p>
-            <p>
-              <i class="fas fa-link experience-fa-icons"></i>
-              <a
-                class="experience-company-links"
-                href="https://www.nokia.com/ro_ro/"
-                target="_blank"
-                rel="noopener"
-                >https://www.nokia.com/ro_ro/</a
-              >
-            </p>
-            <button class="btn button-general show-more-button">
-              Mai mult
-            </button>
-            <p class="show-more-text invisible-text">
-              Sarcinea mea a fost de a dezvolta și de a menține un tool web
-              intern Nokia, folosit pentru a genera și organiza diverse seturi
-              de metrici și Key Performance Indicators(KPIs), utilizate în toate
-              operațiunile Nokia. În urma implicării mele, tool-ul a trecut prin
-              schimbări majore, mai ales pe partea de User Interface(UI) și User
-              Experience(UX), acesta fiind folosit mai eficient de alți angajați
-              Nokia.
-            </p>
-          </div>
+        <div class="col-md-4">
+          <img class="profile-picture img-fluid" src="Images/ProfilePictureCropped-Compressed.jpg"
+            alt="Profile Picture" />
         </div>
 
-        <div class="div-hr"></div>
+        <div class="col-md-4 align-self-center">
+          <h2>Detalii</h2>
+          <p><strong>Nume complet: </strong>Casapu Mircea-Adrian</p>
+          <p><strong>Varsta: </strong> 22 de ani</p>
+          <p><strong>Locatie: </strong> Timisoara, Romania</p>
+        </div>
       </div>
-    </section>
+      <div class="div-hr"></div>
 
-    <!--Abilities Slide-->
-    <section class="background-abilities" id="slideAbilitati">
-      <div class="container-md">
-        <div class="row">
-          <div class="col">
-            <h1 class="section-header">Abilitati</h1>
-            <p class="quotes">
-              "Ability is what you're capable of doing. Motivation determines
-              what you do. Attitude determines how well you do it."<br />
-              - Lou Holtz
-            </p>
-          </div>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <a href="https://drive.google.com/file/d/14_VkpWXMzq_5monz7cpl_Mb5Y4mipRDc/view?usp=sharing" target="_blank"
+            rel="noopener" class="btn btn-lg button-general button-cv">
+            CV-ul meu</a>
         </div>
-
-        <div class="div-hr"></div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <h2 class="abilities-header">Skills</h2>
-          </div>
-          <div class="col-md-9">
-            <!-- <p>HTML5, CSS3, JavaScript, Boostrap, jQuery, ASP.NET, MVC, SQL, Ajax, Java, C#, C/C++</p> -->
-            <div class="abilities-flex-container">
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/480px-HTML5_logo_and_wordmark.png"
-                  alt="HTML5"
-                  class="img-fluid"
-                />HTML5
-              </p>
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/340px-CSS3_logo_and_wordmark.png"
-                  alt="CSS3"
-                  class="img-fluid"
-                />CSS
-              </p>
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/128px-Unofficial_JavaScript_logo_2.png"
-                  alt="Javascript"
-                  class="img-fluid"
-                />JavaScript
-              </p>
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/128px-Octicons-database.png"
-                  alt="SQL"
-                  class="img-fluid"
-                />SQL
-              </p>
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/getbootstrap-icon.svg"
-                  alt="Bootstrap"
-                  class="img-fluid"
-                />Bootstrap
-              </p>
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/jquery-icon.svg"
-                  alt="jQuery"
-                  class="img-fluid"
-                />jQuery
-              </p>
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/dotnet-icon.svg"
-                  alt="ASP.NET"
-                  class="img-fluid"
-                />ASP.NET
-              </p>
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/java-icon.svg"
-                  alt="Java"
-                  class="img-fluid"
-                />Java
-              </p>
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/200px-C_Sharp_logo.png"
-                  alt="C#"
-                  class="img-fluid"
-                />C#
-              </p>
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/128px-ISO_C++_Logo.png"
-                  alt="C/C++"
-                  class="img-fluid"
-                />C/C++
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="div-hr"></div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <h2 class="abilities-header">Tools</h2>
-          </div>
-          <div class="col-md-9">
-            <div class="abilities-flex-container">
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/480px-Visual_Studio_Code_1.35_icon.png"
-                  alt="VS Code"
-                  class="img-fluid"
-                />VS Code
-              </p>
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/483px-Visual_Studio_Icon_2019.png"
-                  alt="VS"
-                  class="img-fluid"
-                />Visual Studio
-              </p>
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/git-scm-icon.svg"
-                  alt="Git"
-                  class="img-fluid"
-                />Git/GitHub
-              </p>
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/jira-logo.png"
-                  alt="Jira"
-                  class="img-fluid"
-                />Jira
-              </p>
-              <p class="abilities-flex-paragraph">
-                <img
-                  src="Images/Icons/stackoverflow-icon.svg"
-                  alt="Stack Overflow"
-                  class="img-fluid"
-                />Stack Overflow
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="div-hr"></div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <h2 class="abilities-header-2">Limbi</h2>
-          </div>
-          <div class="col-md-9">
-            <p>
-              <strong>Romana</strong> (Limba materna)<br /><strong
-                >Engleza</strong
-              >
-              (Daily use)<br /><strong>Franceza</strong> (Un petit peu)
-            </p>
-          </div>
-        </div>
-        <div class="div-hr"></div>
       </div>
-    </section>
 
-    <!--Contact form Slide-->
-    <section class="background-contact-form">
-      <div class="container-md">
-        <div class="row" id="slideContact">
-          <div class="col">
-            <h1 class="section-header">Contacteaza-ma</h1>
-          </div>
+      <div class="div-hr"></div>
+    </div>
+  </section>
+
+  <!-- Experience Slide -->
+  <section class="background-experience">
+    <div class="container-md">
+      <div class="row justify-content-center education-slide" id="slideExperienta">
+        <div class="col-md-12">
+          <h1 class="section-header">Experienta</h1>
+          <p class="quotes">
+            “People never learn anything by being told, they have to find out
+            for themselves.”<br />
+            - Paulo Coelho
+          </p>
+        </div>
+      </div>
+
+      <div class="div-hr"></div>
+
+      <div class="row">
+        <div class="col-3">
+          <h2>Educatie</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <h3>Universitatea Politehnica Timisoara</h3>
         </div>
 
-        <div class="div-hr"></div>
-
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
-        >
-          <div class="row mb-3">
-            <label for="inputName" class="col-sm-2 col-form-label">
-              <h2 class="contact-form-labels">Nume</h2>
-            </label>
-            <div class="col-md-10">
-              <input
-                type="text"
-                class="form-control"
-                id="inputName"
-                name="Nume"
-              />
-            </div>
-          </div>
-          <div class="row mb-3">
-            <label for="inputEmail" class="col-sm-2 col-form-label">
-              <h2 class="contact-form-labels">Email</h2>
-            </label>
-            <div class="col-md-10">
-              <input
-                type="email"
-                class="form-control"
-                id="inputEmail"
-                name="Email"
-              />
-            </div>
-          </div>
-          <div class="row mb-3">
-            <label for="inputMessage" class="col-sm-2 col-form-label">
-              <h2 class="contact-form-labels">Mesaj</h2>
-            </label>
-            <div class="col-md-10">
-              <textarea
-                class="form-control"
-                id="inputMessage"
-                rows="3"
-                name="Mesaj"
-              ></textarea>
-            </div>
-          </div style = "text-allign:center;">
-          <div data-netlify-recaptcha="true"
-          style="display: inline-block;"></div>
-
-          <div class="row justify-content-center">
-            <div class="col-md-3">
-            <button
-            type="submit"
-            class="btn btn-lg button-general button-form-submit"
-          >
-            Trimite formularul
+        <div class="col-md-9">
+          <p>
+            <strong>Diplomă de Licență - Facultatea de Automatică și Calculatoare -
+              Ingineria Sistemelor</strong>
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt experience-fa-icons"></i>
+            Timisoara, 2017-Prezent
+          </p>
+          <button class="btn button-general show-more-button">
+            Mai mult
           </button>
-          </div>
+          <p class="show-more-text invisible-text">
+            În cadrul UPT am studiat diverse materii de OOP (Java, C#, C++) și
+            robotica de bază prin programarea pe plăcuțe Arduino. De asemenea,
+            am aprofundat diverse tehnologii web, precum JavaScript, SQL și
+            deployment pe diverse servicii de cloud, precum Azure.
+          </p>
         </div>
-        </form>
-
-        <div class="div-hr"></div>
       </div>
-    </section>
 
-    <!-- Get in touch Slide -->
-    <section class="background-footer-contact">
-      <div class="container-md" id="slideContact">
-        <div class="row justify-content-center">
-          <div class="col-md-3 footer-links justify-content-center">
-            <a
-              class="contact-icons"
-              href="https://www.linkedin.com/in/mircea-casapu-54a794162"
-              target="_blank"
-              rel="noopener"
-              ><i class="fab fa-linkedin-in"></i> LinkedIn</a
-            >
-          </div>
-          <div class="col-md-3 footer-links justify-content-center">
-            <a
-              class="contact-icons"
-              href="https://github.com/PCRinus"
-              target="_blank"
-              rel="noopener"
-              ><i class="fab fa-github-square"></i> GitHub</a
-            >
-          </div>
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Liceul Teoretic "Grigore Moisil"</h3>
         </div>
 
-        <div class="row">
-          <div class="col">
-            <p class="footer-thanks">
-              Made with ❤️ and ☕. Hosted and deployed with
-              <a href="https://www.netlify.com/">Netlify</a>.
+        <div class="col-md-9">
+          <p>
+            <strong>Diplomă de Bacalaureat - Matematică-Informatică</strong>
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt experience-fa-icons"></i>
+            Timisoara, 2013-2017
+          </p>
+          <button class="btn button-general show-more-button">
+            Mai mult
+          </button>
+          <p class="show-more-text invisible-text">
+            În timpul liceului am avut primele contacte cu programarea,
+            specific C/C++ și puțină dezvoltare web(vanilla HTML/CSS). Aceasta
+            a fopst perioada care mi-a creat bazele programării, și care mi-a
+            trezit interesul în tehnologiile web.
+          </p>
+        </div>
+      </div>
+
+      <div class="div-hr"></div>
+
+      <div class="row">
+        <div class="col-3">
+          <h2>Cariera</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Smart Value Solutions</h3>
+        </div>
+
+        <div class="col-md-9">
+          <p><strong>Web Developer</strong> <br /></p>
+          <p>
+            <i class="fas fa-map-marker-alt experience-fa-icons"></i>
+            Timisoara/Remote, Sept 2020-Prezent
+          </p>
+          <p>
+            <i class="fas fa-link experience-fa-icons"></i>
+            <a class="experience-company-links" href="https://www.smartvalue.io/" target="_blank"
+              rel="noopener">https://www.smartvalue.io/</a>
+          </p>
+          <button class="btn button-general show-more-button">
+            Mai mult
+          </button>
+          <p class="show-more-text invisible-text">In cadrul companiei, task-urile mele cuprind dezvoltarea si
+            mentinerea a tool-urilor interne de organizare, catalogare si refund a produselor din cadrul magazinului
+            online <a href="https://www.newpharma.be/pharmacie/">Newpharma</a>. Limbajele in care lucrez sunt PHP si
+            JavaScript, iar tool-urile pe care le folosesc sunt: PHPStorm, GitLab, Jenkins.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Nokia Networks</h3>
+        </div>
+
+        <div class="col-md-9">
+          <p><strong>Junior Software Development Engineer</strong> <br /></p>
+          <p>
+            <i class="fas fa-map-marker-alt experience-fa-icons"></i>
+            Timisoara/Remote, Dec 2019-Sept 2020
+          </p>
+          <p>
+            <i class="fas fa-link experience-fa-icons"></i>
+            <a class="experience-company-links" href="https://www.nokia.com/ro_ro/" target="_blank"
+              rel="noopener">https://www.nokia.com/ro_ro/</a>
+          </p>
+          <button class="btn button-general show-more-button">
+            Mai mult
+          </button>
+          <p class="show-more-text invisible-text">
+            Sarcinea mea a fost de a dezvolta și de a menține un tool web
+            intern Nokia, folosit pentru a genera și organiza diverse seturi
+            de metrici și Key Performance Indicators(KPIs), utilizate în toate
+            operațiunile Nokia. În urma implicării mele, tool-ul a trecut prin
+            schimbări majore, mai ales pe partea de User Interface(UI) și User
+            Experience(UX), acesta fiind folosit mai eficient de alți angajați
+            Nokia.
+          </p>
+        </div>
+      </div>
+
+      <div class="div-hr"></div>
+    </div>
+  </section>
+
+  <!--Abilities Slide-->
+  <section class="background-abilities" id="slideAbilitati">
+    <div class="container-md">
+      <div class="row">
+        <div class="col">
+          <h1 class="section-header">Abilitati</h1>
+          <p class="quotes">
+            "Ability is what you're capable of doing. Motivation determines
+            what you do. Attitude determines how well you do it."<br />
+            - Lou Holtz
+          </p>
+        </div>
+      </div>
+
+      <div class="div-hr"></div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <h2 class="abilities-header">Skills</h2>
+        </div>
+        <div class="col-md-9">
+          <!-- <p>HTML5, CSS3, JavaScript, Boostrap, jQuery, ASP.NET, MVC, SQL, Ajax, Java, C#, C/C++</p> -->
+          <div class="abilities-flex-container">
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/480px-HTML5_logo_and_wordmark.png" alt="HTML5" class="img-fluid" />HTML5
             </p>
-            <p class="footer-thanks">© Mircea Casapu</p>
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/340px-CSS3_logo_and_wordmark.png" alt="CSS3" class="img-fluid" />CSS
+            </p>
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/128px-Unofficial_JavaScript_logo_2.png" alt="Javascript"
+                class="img-fluid" />JavaScript
+            </p>
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/128px-Octicons-database.png" alt="SQL" class="img-fluid" />SQL
+            </p>
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/getbootstrap-icon.svg" alt="Bootstrap" class="img-fluid" />Bootstrap
+            </p>
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/jquery-icon.svg" alt="jQuery" class="img-fluid" />jQuery
+            </p>
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/dotnet-icon.svg" alt="ASP.NET" class="img-fluid" />ASP.NET
+            </p>
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/java-icon.svg" alt="Java" class="img-fluid" />Java
+            </p>
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/200px-C_Sharp_logo.png" alt="C#" class="img-fluid" />C#
+            </p>
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/128px-ISO_C++_Logo.png" alt="C/C++" class="img-fluid" />C/C++
+            </p>
           </div>
         </div>
       </div>
-    </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script src="Dependencies\bootstrap-5.0.0-alpha1-dist\js\bootstrap.min.js"></script>
+      <div class="div-hr"></div>
 
-    <script src="Scripts/typed.js"></script>
+      <div class="row">
+        <div class="col-md-3">
+          <h2 class="abilities-header">Tools</h2>
+        </div>
+        <div class="col-md-9">
+          <div class="abilities-flex-container">
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/480px-Visual_Studio_Code_1.35_icon.png" alt="VS Code" class="img-fluid" />VS Code
+            </p>
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/483px-Visual_Studio_Icon_2019.png" alt="VS" class="img-fluid" />Visual Studio
+            </p>
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/git-scm-icon.svg" alt="Git" class="img-fluid" />Git/GitHub
+            </p>
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/jira-logo.png" alt="Jira" class="img-fluid" />Jira
+            </p>
+            <p class="abilities-flex-paragraph">
+              <img src="Images/Icons/stackoverflow-icon.svg" alt="Stack Overflow" class="img-fluid" />Stack Overflow
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <!-- jQuery -->
-    <script src="Dependencies\jquery\jquery-3.5.1.min.js"></script>
+      <div class="div-hr"></div>
 
-    <script>
-      var typed = new Typed(".typed", {
-        strings: ["Web Developer^1000", "UI/UX Designer^1000"],
-        smartBackspace: true,
-        typeSpeed: 40,
-        backSpeed: 60,
-        cursorChar: "_",
-        loop: true,
-        fadeOut: true,
-      });
-    </script>
+      <div class="row">
+        <div class="col-md-3">
+          <h2 class="abilities-header-2">Limbi</h2>
+        </div>
+        <div class="col-md-9">
+          <p>
+            <strong>Romana</strong> (Limba materna)<br /><strong>Engleza</strong>
+            (Daily use)<br /><strong>Franceza</strong> (Un petit peu)
+          </p>
+        </div>
+      </div>
+      <div class="div-hr"></div>
+    </div>
+  </section>
 
-    <script src="Scripts/index.js"></script>
-  </body>
+  <!--Contact form Slide-->
+  <section class="background-contact-form">
+    <div class="container-md">
+      <div class="row" id="slideContact">
+        <div class="col">
+          <h1 class="section-header">Contacteaza-ma</h1>
+        </div>
+      </div>
+
+      <div class="div-hr"></div>
+
+      <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <div class="row mb-3">
+          <label for="inputName" class="col-sm-2 col-form-label">
+            <h2 class="contact-form-labels">Nume</h2>
+          </label>
+          <div class="col-md-10">
+            <input type="text" class="form-control" id="inputName" name="Nume" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputEmail" class="col-sm-2 col-form-label">
+            <h2 class="contact-form-labels">Email</h2>
+          </label>
+          <div class="col-md-10">
+            <input type="email" class="form-control" id="inputEmail" name="Email" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputMessage" class="col-sm-2 col-form-label">
+            <h2 class="contact-form-labels">Mesaj</h2>
+          </label>
+          <div class="col-md-10">
+            <textarea class="form-control" id="inputMessage" rows="3" name="Mesaj"></textarea>
+          </div>
+        </div style="text-allign:center;">
+        <div data-netlify-recaptcha="true" style="display: inline-block;"></div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <button type="submit" class="btn btn-lg button-general button-form-submit">
+              Trimite formularul
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="div-hr"></div>
+    </div>
+  </section>
+
+  <!-- Get in touch Slide -->
+  <section class="background-footer-contact">
+    <div class="container-md" id="slideContact">
+      <div class="row justify-content-center">
+        <div class="col-md-3 footer-links justify-content-center">
+          <a class="contact-icons" href="https://www.linkedin.com/in/mircea-casapu-54a794162" target="_blank"
+            rel="noopener"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        </div>
+        <div class="col-md-3 footer-links justify-content-center">
+          <a class="contact-icons" href="https://github.com/PCRinus" target="_blank" rel="noopener"><i
+              class="fab fa-github-square"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <p class="footer-thanks">
+            Made with ❤️ and ☕. Hosted and deployed with
+            <a href="https://www.netlify.com/">Netlify</a>.
+          </p>
+          <p class="footer-thanks">© Mircea Casapu</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="Dependencies\bootstrap-5.0.0-alpha1-dist\js\bootstrap.min.js"></script>
+
+  <script src="Scripts/typed.js"></script>
+
+  <!-- jQuery -->
+  <!-- <script src="Dependencies\jquery\jquery-3.5.1.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script>
+    var typed = new Typed(".typed", {
+      strings: ["Web Developer^1000", "UI/UX Designer^1000"],
+      smartBackspace: true,
+      typeSpeed: 40,
+      backSpeed: 60,
+      cursorChar: "_",
+      loop: true,
+      fadeOut: true,
+    });
+  </script>
+
+  <script src="Scripts/index.js"></script>
+</body>
+
 </html>
